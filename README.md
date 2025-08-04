@@ -1,0 +1,84 @@
+## AULA 31/07
+## Abstração
+// é uma representação simplificada de uma entidade, sendo aplicada em computação
+
+# 1° Entidade
+# 2° repositório (CRUD)
+# 3° serviço
+// PUT, POST, DELETE
+# 4° control (API)
+
+# Arquiteto de Framework
+// Um "Arquiteto de Framework" é um profissional responsável por projetar, desenvolver e gerenciar frameworks (estruturas) de software, que são conjuntos de ferramentas e práticas reutilizáveis para acelerar o desenvolvimento de aplicações. Essa função envolve a criação de bases sólidas para sistemas complexos, garantindo padrões, consistência e eficiência no desenvolvimento. 
+Responsabilidades de um Arquiteto de Framework:
+Projetar e desenvolver frameworks:
+Definir a arquitetura, componentes, interfaces e padrões de um framework.
+Garantir a qualidade e consistência:
+Assegurar que o framework seja robusto, escalável e aderente às melhores práticas de desenvolvimento.
+Documentar o framework:
+Criar documentação clara e abrangente para facilitar o uso e manutenção do framework.
+Orientar desenvolvedores:
+Fornecer suporte e orientação aos desenvolvedores que utilizam o framework.
+Manter e evoluir o framework:
+Monitorar o desempenho, identificar necessidades de melhoria e realizar atualizações no framework. 
+Tipos de frameworks:
+Frameworks de arquitetura de software:
+Fornecem estrutura para a organização de componentes de software, definindo como eles interagem e se comunicam. Exemplos incluem arquiteturas de microsserviços, arquiteturas orientadas a eventos, entre outras. 
+Frameworks de front-end:
+Facilitam o desenvolvimento de interfaces de usuário, como React, Angular e Vue.js. 
+Frameworks de back-end:
+Ajudam a construir a lógica e funcionalidades de aplicações, como Spring, Django e .NET. 
+Frameworks de arquitetura empresarial:
+Ajudam a alinhar a arquitetura de TI com os objetivos de negócio, como TOGAF e Zachman Framework. 
+Importância do Arquiteto de Framework:
+Aceleração do desenvolvimento:
+O uso de frameworks permite que os desenvolvedores reutilizem código e componentes, reduzindo o tempo de desenvolvimento.
+Melhora da qualidade e consistência:
+Frameworks promovem a padronização e a adoção de melhores práticas, resultando em sistemas mais robustos e com menos erros.
+Facilidade de manutenção:
+Uma boa arquitetura de framework facilita a manutenção e evolução do sistema ao longo do tempo.
+Escalabilidade e desempenho:
+Frameworks bem projetados podem lidar com o crescimento da aplicação e garantir um bom desempenho. 
+Em resumo, um Arquiteto de Framework desempenha um papel crucial no desenvolvimento de software moderno, garantindo que as aplicações sejam construídas de forma eficiente, robusta e escalável. 
+
+# classe
+// estado var
+
+// @Autowired está focada na Flexibilidade a mudanças
+
+# Getters e Setters 🔗
+
+Métodos get e set — muitas vezes chamados apenas de getters e setters — são muito usados em linguagens orientadas a objetos, como Java e C++. A recomendação para uso desses métodos é a seguinte: todos os dados de uma classe devem ser privados e o acesso a eles — se necessário — deve ocorrer por meio de getters (acesso de leitura) e setters (acesso de escrita).
+
+Veja um exemplo a seguir, no qual métodos get e set são usados para acessar o atributo matricula de uma classe Aluno.
+
+class Aluno {
+
+  private int matricula;
+  ...
+  public int getMatricula() {
+    return matricula;
+  }
+
+  public setMatricula(int matricula) {
+    this.matricula = matricula;  
+   }
+  
+}
+
+# Coesão
+// Se tratando em uma função de estrutua de dados, é comum definir seu serviço de uma forma mais equilibrada, sendo que nela, é feito de algumas funçoes como:
+- Pilha: Suponha agora a seguinte classe:
+
+class Stack<T> {
+  boolean empty() { ... }  define se está vazia ou tem algum elemento
+  T pop() { ... }    elemento que vai ser tirado pela parte de cima
+  push (T) { ... }    essa função faz puxar os elementos pra cima
+  int size() { ... }     
+}
+Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
+
+# Acoplamento
+// 
+
+// Maximize a coesão das classes e minimize o acoplamento entre elas.
