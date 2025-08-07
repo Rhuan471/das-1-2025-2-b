@@ -1,12 +1,11 @@
-## AULA 31/07
+    Design Arquitetura de Sistemas
 ## Abstração
 // é uma representação simplificada de uma entidade, sendo aplicada em computação
 
-//1° Entidade
-// 2° repositório (CRUD)
-// 3° serviço
-// PUT, POST, DELETE
-# 4° control (API)
+//1° Entity
+// 2° repository (CRUD) JPA
+// 3° services (PUT, POST, DELETE) USE CASES
+// controller (API REST)
 
 
 # Arquiteto de Framework
@@ -96,3 +95,18 @@ Trata-se de uma classe coesa, pois todos os seus métodos implementam operaçõe
 // Maximize a coesão das classes e minimize o acoplamento entre elas. Abstração
 
 // OBJETIVO: Reduzir esses acoplamentos, mas não totalmente.
+
+# SOLID 
+// Single Responsibility  Principle (Princípio da responsabilidade única)
+// Open-Closed Principle (Princípio Aberto-Fechado)
+// Liskov Substitution Principle (Princípio da substituição de Liskov)
+// Interface Segregation Principle (Princípio da Segregação da Interface)
+// Dependency Inversion Principle (Princípio da inversão da dependência)
+
+# Princípio da Responsabilidade Única
+// Seu foco é na parte do serviço utilizando a regra de negócio ...
+
+// - - - - - > implementação
+// ---------|> associação
+// ----------> herança
+
