@@ -8,6 +8,7 @@
 // PUT, POST, DELETE
 # 4° control (API)
 
+
 # Arquiteto de Framework
 // Um "Arquiteto de Framework" é um profissional responsável por projetar, desenvolver e gerenciar frameworks (estruturas) de software, que são conjuntos de ferramentas e práticas reutilizáveis para acelerar o desenvolvimento de aplicações. Essa função envolve a criação de bases sólidas para sistemas complexos, garantindo padrões, consistência e eficiência no desenvolvimento. 
 Responsabilidades de um Arquiteto de Framework:
@@ -85,7 +86,7 @@ Trata-se de uma classe coesa, pois todos os seus métodos implementam operaçõe
 
 # Acoplamento
 // class A {
-  private B b;
+  private B b;     <- VARIÁVEL
   public A(){
     b = new B();
     b.fazqq();     <- MÉTODO
