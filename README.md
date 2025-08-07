@@ -93,4 +93,6 @@ Trata-se de uma classe coesa, pois todos os seus métodos implementam operaçõe
   }
 }
 
-// Maximize a coesão das classes e minimize o acoplamento entre elas.
+// Maximize a coesão das classes e minimize o acoplamento entre elas. Abstração
+
+// OBJETIVO: Reduzir esses acoplamentos, mas não totalmente.
