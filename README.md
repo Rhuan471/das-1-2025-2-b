@@ -2,9 +2,9 @@
 ## Abstração
 // é uma representação simplificada de uma entidade, sendo aplicada em computação
 
-# 1° Entidade
-# 2° repositório (CRUD)
-# 3° serviço
+//1° Entidade
+// 2° repositório (CRUD)
+// 3° serviço
 // PUT, POST, DELETE
 # 4° control (API)
 
@@ -42,7 +42,12 @@ Frameworks bem projetados podem lidar com o crescimento da aplicação e garanti
 Em resumo, um Arquiteto de Framework desempenha um papel crucial no desenvolvimento de software moderno, garantindo que as aplicações sejam construídas de forma eficiente, robusta e escalável. 
 
 # classe
-// estado var
+// estado -> var, 
+// comportamento -> método
+// escondendo o comportamento de cliente
+
+# Desenvovilmento em paralelo
+// Uma ou mais pessoas podem ser trabalhadas no mesmo projeto
 
 // @Autowired está focada na Flexibilidade a mudanças
 
@@ -79,6 +84,12 @@ class Stack<T> {
 Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
 
 # Acoplamento
-// 
+// class A {
+  private B b;
+  public A(){
+    b = new B();
+    b.fazqq();     <- MÉTODO
+  }
+}
 
 // Maximize a coesão das classes e minimize o acoplamento entre elas.
