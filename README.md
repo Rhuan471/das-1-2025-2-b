@@ -123,4 +123,4 @@ Trata-se de uma classe coesa, pois todos os seus métodos implementam operaçõe
 . De sua própria classe (caso 1)
 . de objetos passados com parâmetros (caso 2)
 . de objetos criados pelo próprio método (caso 3)
-. de atributos da classe do método (caso 4)
+. de atributos da classe do método (caso 4) 
