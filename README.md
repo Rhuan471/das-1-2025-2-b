@@ -1,10 +1,12 @@
     Design Arquitetura de Sistemas
-## Abstração
+
+
+# Abstração
 // é uma representação simplificada de uma entidade, sendo aplicada em computação
 
-//1° Entity
-// 2° repository (CRUD) JPA
-// 3° services (PUT, POST, DELETE) USE CASES
+// 1° Entity     - Dados
+// 2° repository (CRUD) JPA spring data
+// 3° services (PUT, POST, DELETE) USE CASES (lógica)
 // controller (API REST)
 
 
