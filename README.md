@@ -1,5 +1,7 @@
     Design Arquitetura de Sistemas
-
+    # OBJETIVO
+// Desenvolvimento de Software: o curso promove uma formação que propicie ao egresso. atuar na especificação, desenvlvimento, manutenção e evolução de softwares. Isso inclui a capacidade de atuar nas diversas eetapas do processo de desenvolvimento de softwares/sistemas de informação.
+// Gestão de Qualidade de Software: o curso promove uma formação que propice ao egresso atuar na definição, verificação, validação e evolução de processos, técnicas e metodologias de desenvolvimento de softwares dentro da perspectiva da gestão da quqlidade do processo e do produto de software.
 
 # Abstração
 // é uma representação simplificada de uma entidade, sendo aplicada em computação
@@ -109,6 +111,16 @@ Trata-se de uma classe coesa, pois todos os seus métodos implementam operaçõe
 // Seu foco é na parte do serviço utilizando a regra de negócio ...
 
 // - - - - - > implementação
-// ---------|> associação
+// ---------|> associação (mais indicado para usá-la quanto a herança)
 // ----------> herança
 
+# Princípio de Inversão de Dependências
+// Classe cliente (controladores) se estabelece prioritariamente com abstrações (interfaces de serviço)
+//
+
+# Princípio de Demeter
+// Também chamado de Princípio do Menor Conhecimento, defende que a implementação de um método deve invocar apenas os seguintes outros métodos:
+. De sua própria classe (caso 1)
+. de objetos passados com parâmetros (caso 2)
+. de objetos criados pelo próprio método (caso 3)
+. de atributos da classe do método (caso 4)
