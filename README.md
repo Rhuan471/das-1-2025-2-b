@@ -70,7 +70,7 @@ class Aluno {
   }
 
   public setMatricula(int matricula) {
-    this.matricula = matricula;  
+    this.matricula = matricula;
    }
   
 }
@@ -100,7 +100,7 @@ Trata-se de uma classe coesa, pois todos os seus métodos implementam operaçõe
 
 // OBJETIVO: Reduzir esses acoplamentos, mas não totalmente.
 
-# SOLID 
+# SOLID
 // Single Responsibility  Principle (Princípio da responsabilidade única)
 // Open-Closed Principle (Princípio Aberto-Fechado)
 // Liskov Substitution Principle (Princípio da substituição de Liskov)
@@ -108,19 +108,80 @@ Trata-se de uma classe coesa, pois todos os seus métodos implementam operaçõe
 // Dependency Inversion Principle (Princípio da inversão da dependência)
 
 # Princípio da Responsabilidade Única
-// Seu foco é na parte do serviço utilizando a regra de negócio ...
+// Seu foco é na parte do serviço utilizando a regra de negócio, fazendo algo perfeito. Ou seja, é um princípio de design de software que afirma que uma classe ou módulo deve ter apenas uma razão para mudar. Em outras palavras, cada classe deve ter apenas uma responsabilidade, uma única tarefa ou função que ela deve desempenhar.
 
 // - - - - - > implementação
 // ---------|> associação (mais indicado para usá-la quanto a herança)
 // ----------> herança
 
+# Princípio da Segregação de Interfaces
+// O Princípio de Segregação de Interface (ISP) determina queos clientes não devem ser forçados a depender de métodos que não usamEm vez disso , interfaces grandes devem ser divididas em interfaces menores e mais específicas, garantindo que os clientes implementem apenas a funcionalidade necessária. Isso promove a modularidade, reduz o acoplamento e melhora a manutenibilidade do código.
+
+interface Funcionario {
+
+  double getSalario();
+
+  double getFGTS();// apenas funcionários CLT
+
+  int getSIAPE();// apenas funcionários públicos
+
+  ...
+}
+
+Uma alternativa — que atende ao Princípio de Segregação de Interfaces — consiste em criar interfaces específicas (FuncionarioCLT e FuncionarioPublico) que estendem a interface genérica (Funcionario).
+
+interface Funcionario {
+  double getSalario();
+  ...
+}
+
+interface FuncionarioCLT extends Funcionario {
+  double getFGTS();
+  ...
+}
+
+interface FuncionarioPublico extends Funcionario {
+  int getSIAPE();
+  ...
+}
+
 # Princípio de Inversão de Dependências
 // Classe cliente (controladores) se estabelece prioritariamente com abstrações (interfaces de serviço)
-//
+//  A ideia é então trocar (ou inverter) as dependências: em vez de depender de classes concretas, clientes devem depender de interfaces. Portanto, um nome mais intuitivo para o princípio seria Prefira Interfaces a Classes.
+
+interface I { ... }
+
+class C1 implements I {
+  ...
+}
+class C2 implements I {
+  ...
+}
+class Cliente {
+
+  I i;
+
+  Cliente (I i) {
+    this.i = i;
+    ...
+  } ...
+}
+class Main {
+
+  void main () {
+    C1 c1 = new C1();
+    new Cliente(c1);
+    ...
+    C2 c2 = new C2();
+    new Cliente(c2);
+    ...
+  }
+}
 
 # Princípio de Demeter
 // Também chamado de Princípio do Menor Conhecimento, defende que a implementação de um método deve invocar apenas os seguintes outros métodos:
 . De sua própria classe (caso 1)
 . de objetos passados com parâmetros (caso 2)
 . de objetos criados pelo próprio método (caso 3)
-. de atributos da classe do método (caso 4) 
+. de atributos da classe do método (caso 4)
+
