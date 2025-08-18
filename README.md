@@ -185,3 +185,34 @@ class Main {
 . de objetos criados pelo próprio método (caso 3)
 . de atributos da classe do método (caso 4)
 
+# Princípio de Substituição de Liskov
+// O Princípio de Substituição de Liskov explicita regras para redefinição de métodos de classes base em classes filhas. O nome do princípio é uma referência a Barbara Liskov, professora do MIT e ganhadora da edição de 2008 do Prêmio Turing. Dentre outros trabalhos, Liskov desenvolveu pesquisas sobre sistemas de tipos para linguagens orientadas a objetos. Em um desses trabalhos, ela enunciou o princípio que depois ganhou seu nome.
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+
+public class Janelinha3 extends JFrame{
+
+    private JPanel painel;
+
+    public Janelinha3() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(500,500);
+        painel = new JPanel();
+        painel.setBackground(Color.ORANGE);
+        painel.setPreferredSize(new Dimension(200,200));
+        setLayout(new FlowLayout());
+
+        painel.setBorder(new LineBorder(Color.BLACK));
+        painel.setBorder(new TitledBorder("TITULO"));
+
+        add(painel);
+
+        setVisible(true);
+        
+    }
+    public static void main(String[] args) {
+        new Janelinha3();
+    }
+}
