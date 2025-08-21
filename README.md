@@ -180,10 +180,32 @@ class Main {
 
 # Princípio de Demeter
 // Também chamado de Princípio do Menor Conhecimento, defende que a implementação de um método deve invocar apenas os seguintes outros métodos:
+// Todo código que escrever deve chamar objetos que estão dentro da classe, ou no máximo, coisas que eu recebo por parâmetros.
+// Nunca se recebe por coisas globais.
 . De sua própria classe (caso 1)
 . de objetos passados com parâmetros (caso 2)
 . de objetos criados pelo próprio método (caso 3)
 . de atributos da classe do método (caso 4)
+
+public class Janelinha2 extends JFrame{
+    private JTable tabelinha;
+    
+    public Janelinha2() {
+        setTitle("Tabela");
+        setSize(500,500);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        var modelo = new ModeloTabela();
+
+        tabelinha = new JTable(modelo);
+        add(new JScrollPane(tabelinha));
+        setVisible(true);
+    }
+    public static void main(String[] args) {
+        new Janelinha2();
+    }
+
+}
 
 # Princípio de Substituição de Liskov
 // O Princípio de Substituição de Liskov explicita regras para redefinição de métodos de classes base em classes filhas. O nome do princípio é uma referência a Barbara Liskov, professora do MIT e ganhadora da edição de 2008 do Prêmio Turing. Dentre outros trabalhos, Liskov desenvolveu pesquisas sobre sistemas de tipos para linguagens orientadas a objetos. Em um desses trabalhos, ela enunciou o princípio que depois ganhou seu nome.
