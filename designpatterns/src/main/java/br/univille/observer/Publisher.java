@@ -23,6 +23,7 @@ interface Subscriber {
 
 class ConcretePublisher implements Publisher {
     private int state = 0;
+    //private Subscriber[] subscribers = new Subscriber[10];
     private final List<Subscriber> subscribers = new ArrayList<>();
 
     @Override
@@ -55,15 +56,11 @@ class ConcretePublisher implements Publisher {
     public int getState() {
         return state;
     }
-}
-
-
-//Um assinante concreto que implementa a interface do Assinante.
-
-class ConcreteSubscriber implements Subscriber {
-    @Override
-    public void update(ConcretePublisher publisher) {
-        System.out.println("Assinante: Recebi uma atualização. O estado do publicador é " + publisher.getState());
+    public void setState(int state){
+        this.state = state;
     }
 }
+
+
+
 
