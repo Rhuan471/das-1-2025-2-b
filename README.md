@@ -83,7 +83,7 @@ class Stack<T> {
   boolean empty() { ... }  define se está vazia ou tem algum elemento
   T pop() { ... }    elemento que vai ser tirado pela parte de cima
   push (T) { ... }    essa função faz puxar os elementos pra cima
-  int size() { ... }     
+  int size() { ... }
 }
 Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
 
