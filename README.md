@@ -238,3 +238,13 @@ public class Janelinha3 extends JFrame{
         new Janelinha3();
     }
 }
+
+# Características da Arquitetura
+// Requisitos Não funcionais
+
+
+# Expectativa de um Arquiteto
+// Para tomar "Atitude da arquitetura", Orientação é a palavra de ordem em primeira expectativa.
+// framework reativo para o desenvolvimento web front-end.
+
+# Analisar Continuamente a Arquitetura
