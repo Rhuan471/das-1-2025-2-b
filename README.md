@@ -239,8 +239,14 @@ public class Janelinha3 extends JFrame{
     }
 }
 
+# Observer
+// Publisher: Ele produz interesse em serem avisados pelo CONCRETE SUBSCRIBER, executando um método (código). Para isso, ele precisa ter um padrão de comunicação, que é a classe INTERFACE.
+// Interface: com o método "Update", tendo (context) que é uma informação, ele se atualiza, recebendo informações da comunicação.
+
 # Características da Arquitetura
 // Requisitos Não funcionais
+// Concrete Subscriber implementa -------> interface
+
 
 
 # Expectativa de um Arquiteto
