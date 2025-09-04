@@ -254,3 +254,7 @@ public class Janelinha3 extends JFrame{
 // framework reativo para o desenvolvimento web front-end.
 
 # Analisar Continuamente a Arquitetura
+
+# Diferença entre Arquitetura e Design
+// Arquitetura: Foca nas estruturas do softwares no seu estilos monolitos e microsserviços, é responsável por coisas como analisar os requisitos comerciais para extrair e definir as características da arquitetura (os “atributos”), selecionar quais padrões e estilos da arquitetura se encaixariam no domínio do problema e criar componentes (blocos de construção do sistema). um arquiteto de software deve ter uma grande amplitude técnica para pensar.
+// Design: O desenvolvedor foca em ter a prioridade em dar o seu melhor no seu conhecimento prático e experiência, Descrevendo os princípios de design de software em um nível granular. Falar sobre os princípios SOLID, e outros padrões de design (Design Patterns) que um desenvolvedor usa para criar classes bem estruturadas, coesas e fracamente acopladas. No código-fonte, . O desenvolvedor escreve o código limpo, legível e manutenível. Mencionar boas práticas de codificação, como convenções de nomenclatura, comentários claros e refatoração.
