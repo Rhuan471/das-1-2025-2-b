@@ -259,8 +259,13 @@ public class Janelinha3 extends JFrame{
 // Arquitetura: Foca nas estruturas do softwares no seu estilos monolitos e microsserviços, é responsável por coisas como analisar os requisitos comerciais para extrair e definir as características da arquitetura (os “atributos”), selecionar quais padrões e estilos da arquitetura se encaixariam no domínio do problema e criar componentes (blocos de construção do sistema). um arquiteto de software deve ter uma grande amplitude técnica para pensar.
 // Design: O desenvolvedor foca em ter a prioridade em dar o seu melhor no seu conhecimento prático e experiência, Descrevendo os princípios de design de software em um nível granular. Falar sobre os princípios SOLID, e outros padrões de design (Design Patterns) que um desenvolvedor usa para criar classes bem estruturadas, coesas e fracamente acopladas. No código-fonte, . O desenvolvedor escreve o código limpo, legível e manutenível. Mencionar boas práticas de codificação, como convenções de nomenclatura, comentários claros e refatoração.
 // A formação do conhecimento de um Arquiteto em Modelo T (ou T-shaped Architect) é uma abordagem que combina profundidade em uma área específica com uma ampla gama de conhecimentos em outras disciplinas. A analogia vem da letra 'T', onde a perna vertical representa a profundidade e a barra horizontal representa a amplitude. A Perna Vertical é a área onde o arquiteto se aprofunda e se torna um especialista. É o seu diferencial, o pilar de sua expertise. A Barra Horizontal: Conhecimento Amplo (Generalização)
-Essa é a gama de conhecimentos que permite ao arquiteto se comunicar com diferentes equipes, entender o panorama completo e tomar decisões arquiteturais holísticas. O conhecimento aqui é mais sobre "o que" e "por que", e não necessariamente sobre "como" implementar em detalhes. Ou seja, todo o contexto nem sabe ao todo, ele pode ser feito a parte.
+//Essa é a gama de conhecimentos que permite ao arquiteto se comunicar com diferentes equipes, entender o panorama completo e tomar decisões arquiteturais holísticas. O conhecimento aqui é mais sobre "o que" e "por que", e não necessariamente sobre "como" implementar em detalhes. Ou seja, todo o contexto nem sabe ao todo, ele pode ser feito a parte.
 
 # Analisando os Trade-offs
-// Trade-off são compensasões, na arquitetura ele pode ter sua resposta como "depende". (preciso falar mais) ---------------------|
-// Mecanismo de tópico: 
+// Trade-off são compensasões, na arquitetura ele pode ter sua resposta como "depende". Ele pode aumentar a sua complexidade... (preciso falar mais) ---------------------|
+// Mecanismo de tópico: Diferent do Observer, ele serve para poder compartilhar suas mensagens em outras máquinas.
+// Na figura 2.7:
+
+// Na figura 2.8:
+
+// Na figura 2.9: nessa figura, quem dá o lance, é um sender, o item do lance é a ordem de armazenamento, e Aanalisar lance é quem recebe.
