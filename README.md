@@ -147,7 +147,7 @@ interface FuncionarioPublico extends Funcionario {
 
 # Princípio de Inversão de Dependências
 // Classe cliente (controladores) se estabelece prioritariamente com abstrações (interfaces de serviço)
-//  A ideia é então trocar (ou inverter) as dependências: em vez de depender de classes concretas, clientes devem depender de interfaces. Portanto, um nome mais intuitivo para o princípio seria Prefira Interfaces a Classes.
+// A ideia é então trocar (ou inverter) as dependências: em vez de depender de classes concretas, clientes devem depender de interfaces. Portanto, um nome mais intuitivo para o princípio seria Prefira Interfaces a Classes.
 
 interface I { ... }
 
@@ -239,6 +239,9 @@ public class Janelinha3 extends JFrame{
     }
 }
 
+# Ocultamento de Informações
+// Na orientação de objetos, fazer com esse conceito seja implementado para poder possibilitar o desenvolvimento do software. 
+
 # Observer
 // Publisher: Ele produz interesse em serem avisados pelo CONCRETE SUBSCRIBER, executando um método (código). Para isso, ele precisa ter um padrão de comunicação, que é a classe INTERFACE.
 // Interface: com o método "Update", tendo (context) que é uma informação, ele se atualiza, recebendo informações da comunicação.
@@ -254,6 +257,7 @@ public class Janelinha3 extends JFrame{
 // framework reativo para o desenvolvimento web front-end.
 
 # Analisar Continuamente a Arquitetura
+
 
 # Diferença entre Arquitetura e Design
 // Arquitetura: Foca nas estruturas do softwares no seu estilos monolitos e microsserviços, é responsável por coisas como analisar os requisitos comerciais para extrair e definir as características da arquitetura (os “atributos”), selecionar quais padrões e estilos da arquitetura se encaixariam no domínio do problema e criar componentes (blocos de construção do sistema). um arquiteto de software deve ter uma grande amplitude técnica para pensar.
