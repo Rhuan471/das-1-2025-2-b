@@ -266,10 +266,9 @@ public class Janelinha3 extends JFrame{
 //Essa é a gama de conhecimentos que permite ao arquiteto se comunicar com diferentes equipes, entender o panorama completo e tomar decisões arquiteturais holísticas. O conhecimento aqui é mais sobre "o que" e "por que", e não necessariamente sobre "como" implementar em detalhes. Ou seja, todo o contexto nem sabe ao todo, ele pode ser feito a parte.
 
 # Analisando os Trade-offs
-// Trade-off são compensasões, na arquitetura ele pode ter sua resposta como "depende". Ele pode aumentar a sua complexidade... (preciso falar mais) ---------------------|
+// Trade-off são compensasões, na arquitetura ele pode ter sua resposta como "depende", isso quer dizer que ele tem depedências da situação, não existindo resposta certa e nem errada, que é o Trade-offs. Ele pode aumentar a sua complexidade, porque ele não tem uma solução precisa. Ou seja, ele não resolve todos os problemas necessários do mundo.
 // Mecanismo de tópico: Diferent do Observer, ele serve para poder compartilhar suas mensagens em outras máquinas.
-// Na figura 2.7:
-
-// Na figura 2.8:
+// Na figura 2.7: Nesta arquitetura mais simples, a vantagem como essa é quando se insere o lance, mais de um sistema pode selecionar o lance. Qunado a performance do banco de dados se limita ao excesso de uso no sistema.
+// Na figura 2.8: Mecanismo de tópico, no tópico sse inscreve como assinantes (subscribers), e o publisher envia uma mensagem e cada um recebe a mesma mensagem. Assim como se implementa uma design patterns dentro do processo de u sistema operacional.
 
 // Na figura 2.9: nessa figura, quem dá o lance, é um sender, o item do lance é a ordem de armazenamento, e Aanalisar lance é quem recebe.
