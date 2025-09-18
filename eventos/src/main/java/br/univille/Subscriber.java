@@ -15,23 +15,24 @@ public interface Subscriber {
         String subscription = "subscription-rhuan";
 
         ServiceBusProcessorClient processorClient = 
-            new ServiceBusClientBuider()
-            .fullyQuallifiedNamespace(servidor)
+            new ServiceBusClientBuilder()
+            .fullyQualifiedNamespace(servidor)
             .connectionString(chave)
-            .transportType(AmqTransportType.AMQP_WEB_SOCKETS)
+            .transportType(AmqpTransportType.AMQP_WEB_SOCKETS)
             .processor()
             .topicName(topicName)
             .subscriptionName(subscription)
-            .receiveMode(ServiceUnavailableException.PEEK_LOCK)
+            .receiveMode(ServiceBusReceiveMode.PEEK_LOCK)
             .processMessage(context -> {
                 System.out.println(
                     context.getMessage()
                     .getBody().toString());
-                    context.complete();
+                context.complete();
             })
             .processError(context -> {
                 System.out.println("Deu ruim");
             })
             .buildProcessorClient();
+            processorClient.start();
     }
 }
