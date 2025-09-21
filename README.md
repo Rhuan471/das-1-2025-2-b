@@ -46,9 +46,9 @@ Frameworks bem projetados podem lidar com o crescimento da aplicação e garanti
 Em resumo, um Arquiteto de Framework desempenha um papel crucial no desenvolvimento de software moderno, garantindo que as aplicações sejam construídas de forma eficiente, robusta e escalável. 
 
 # classe
-// estado -> var, 
-// comportamento -> método
-// escondendo o comportamento de cliente
+//estado -> var, 
+//comportamento -> método
+//escondendo uma informação, ou seja o comportamento de cliente,
 
 # Desenvovilmento em paralelo
 // Uma ou mais pessoas podem ser trabalhadas no mesmo projeto
