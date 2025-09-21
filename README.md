@@ -1,6 +1,6 @@
     Design Arquitetura de Sistemas
     # OBJETIVO
-// Desenvolvimento de Software: o curso promove uma formação que propicie ao egresso. atuar na especificação, desenvlvimento, manutenção e evolução de softwares. Isso inclui a capacidade de atuar nas diversas eetapas do processo de desenvolvimento de softwares/sistemas de informação.
+// Desenvolvimento de Software: o curso promove uma formação que propicie ao egresso. atuar na especificação, desenvolvimento, manutenção e evolução de softwares. Isso inclui a capacidade de atuar nas diversas etapas do processo de desenvolvimento de softwares/sistemas de informação.
 // Gestão de Qualidade de Software: o curso promove uma formação que propice ao egresso atuar na definição, verificação, validação e evolução de processos, técnicas e metodologias de desenvolvimento de softwares dentro da perspectiva da gestão da quqlidade do processo e do produto de software.
 
 # Abstração
@@ -76,16 +76,19 @@ class Aluno {
 }
 
 # Coesão
-// Se tratando em uma função de estrutua de dados, é comum definir seu serviço de uma forma mais equilibrada, sendo que nela, é feito de algumas funçoes como:
-- Pilha: Suponha agora a seguinte classe:
+// Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
+// Todos os métodos e atributos devem estar voltados para a implementação do mesmo serviço, quando uma única funcionalidade é implementada.
+//As suas vantagens são: Facilitar a impelmentação da uma classe fazendo modificações, a sua alocação de um único responsável por amnter uma classe e o reúso de teste de uma classe.
 
+Exemplo:
+//Numa função de estrutua de dados, é comum definir seu serviço de uma forma mais equilibrada, sendo que nela, é feito de algumas funçoes como:
+- Pilha: Suponha agora a seguinte classe:
 class Stack<T> {
   boolean empty() { ... }  define se está vazia ou tem algum elemento
   T pop() { ... }    elemento que vai ser tirado pela parte de cima
   push (T) { ... }    essa função faz puxar os elementos pra cima
   int size() { ... }
 }
-Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
 
 # Acoplamento
 // class A {
@@ -96,9 +99,8 @@ Trata-se de uma classe coesa, pois todos os seus métodos implementam operaçõe
   }
 }
 
-// Maximize a coesão das classes e minimize o acoplamento entre elas. Abstração
-
-// OBJETIVO: Reduzir esses acoplamentos, mas não totalmente.
+// OBJETIVO: Reduzir esses acoplamentos, mas não totalmente. Qunado se cria duas classe, uma delas, no lugar dela se tornar um tipo primitivo, números, ela pode se tornar uma referência da outra classe.
+// CURIOSIDADE: Elas podem ser utilizadas para Springboot, Service e APIs.
 
 # SOLID
 // Single Responsibility  Principle (Princípio da responsabilidade única)
@@ -106,6 +108,9 @@ Trata-se de uma classe coesa, pois todos os seus métodos implementam operaçõe
 // Liskov Substitution Principle (Princípio da substituição de Liskov)
 // Interface Segregation Principle (Princípio da Segregação da Interface)
 // Dependency Inversion Principle (Princípio da inversão da dependência)
+
+//SOLID são os 5 pricípios de um projeto que fazem mais do que realizar programas orientadas a objetos, reduzindo ou postergar essa contínua degradação da qualidade interna de sistemas de software. Em resumo, o objetivo não é apenas entregar um projeto capaz de resolver um problema, mas também que facilite manutenções futuras.
+//Considerações: cada parte de camada tem uma função, camada de apresentação, camada de negócio, cuida de regra de negócio.
 
 # Princípio da Responsabilidade Única
 // Seu foco é na parte do serviço utilizando a regra de negócio, fazendo algo perfeito. Ou seja, é um princípio de design de software que afirma que uma classe ou módulo deve ter apenas uma razão para mudar. Em outras palavras, cada classe deve ter apenas uma responsabilidade, uma única tarefa ou função que ela deve desempenhar.
