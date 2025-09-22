@@ -219,36 +219,21 @@ public class Janelinha2 extends JFrame{
 }
 
 # Princípio de Substituição de Liskov
-// O Princípio de Substituição de Liskov explicita regras para redefinição de métodos de classes base em classes filhas. O nome do princípio é uma referência a Barbara Liskov, professora do MIT e ganhadora da edição de 2008 do Prêmio Turing. Dentre outros trabalhos, Liskov desenvolveu pesquisas sobre sistemas de tipos para linguagens orientadas a objetos. Em um desses trabalhos, ela enunciou o princípio que depois ganhou seu nome.
+// O Princípio de Substituição de Liskov (LSP) é um conceito da programação orientada a objetos que estabelece que, se uma classe B é uma subtipo de uma classe A, então os objetos de B devem poder ser substituídos por objetos de A sem que isso afete a execução correta do programa, mantendo o comportamento esperado. Isso significa que a subclasse não deve "quebrar" ou alterar o comportamento da superclasse, e deve ser totalmente compatível com ela. 
+Para explicar o Princípio de Substituição de Liskov vamos nos basear no seguinte exemplo:
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-
-public class Janelinha3 extends JFrame{
-
-    private JPanel painel;
-
-    public Janelinha3() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(500,500);
-        painel = new JPanel();
-        painel.setBackground(Color.ORANGE);
-        painel.setPreferredSize(new Dimension(200,200));
-        setLayout(new FlowLayout());
-
-        painel.setBorder(new LineBorder(Color.BLACK));
-        painel.setBorder(new TitledBorder("TITULO"));
-
-        add(painel);
-
-        setVisible(true);
-        
-    }
-    public static void main(String[] args) {
-        new Janelinha3();
-    }
+void f(A a) {
+  ...
+  a.g();
+  ...
 }
+O método f pode ser chamado passando-se como parâmetros objetos de subclasses B1, B2, …, Bn da classe base A, como mostrado a seguir:
+
+f(new B1());  // f pode receber objetos da subclasse B1 
+...
+f(new B2());  // e de qualquer subclasse de A, como B2
+...
+f(new B3());  // e B3
 
 # Ocultamento de Informações
 // Na orientação de objetos, fazer com esse conceito seja implementado para poder possibilitar o desenvolvimento do software. 
