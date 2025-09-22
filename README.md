@@ -115,9 +115,14 @@ class Stack<T> {
 # Princípio da Responsabilidade Única
 // Seu foco é na parte do serviço utilizando a regra de negócio, fazendo algo perfeito. Ou seja, é um princípio de design de software que afirma que uma classe ou módulo deve ter apenas uma razão para mudar. Em outras palavras, cada classe deve ter apenas uma responsabilidade, uma única tarefa ou função que ela deve desempenhar.
 
+# Prefira composição a herança
+° Herança de classe: É quando o código é utilizado mais de uma vez.
+° Herança de interfaces: 
+
+// ----------> herança
 // - - - - - > implementação
 // ---------|> associação (mais indicado para usá-la quanto a herança)
-// ----------> herança
+
 
 # Princípio da Segregação de Interfaces
 // O Princípio de Segregação de Interface (ISP) determina que os clientes não devem ser forçados a depender de métodos que não usam. Em vez disso , interfaces grandes devem ser divididas em interfaces menores e mais específicas, garantindo que os clientes implementem apenas a funcionalidade necessária. Isso promove a modularidade, reduz o acoplamento e melhora a manutenibilidade do código.
