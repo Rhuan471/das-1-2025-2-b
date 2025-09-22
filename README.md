@@ -151,8 +151,7 @@ interface FuncionarioPublico extends Funcionario {
 }
 
 # Princípio de Inversão de Dependências
-// Classe cliente (controladores) se estabelece prioritariamente com abstrações (interfaces de serviço)
-// A ideia é então trocar (ou inverter) as dependências: em vez de depender de classes concretas, clientes devem depender de interfaces. Portanto, um nome mais intuitivo para o princípio seria Prefira Interfaces a Classes.
+// A ideia é então trocar (ou inverter) as dependências: em vez de depender de classes para fazer implementações concretas, clientes devem depender de interfaces, pois a classe cliente (controladores) se estabelece prioritariamente com abstrações (interfaces de serviço). Portanto, um nome mais intuitivo para o princípio seria Prefira Interfaces a Classes.
 
 interface I { ... }
 
