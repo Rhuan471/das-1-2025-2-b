@@ -99,7 +99,7 @@ class Stack<T> {
   }
 }
 
-// OBJETIVO: Reduzir esses acoplamentos, mas não totalmente. Qunado se cria duas classe, uma delas, no lugar dela se tornar um tipo primitivo, números, ela pode se tornar uma referência da outra classe.
+// OBJETIVO: Reduzir esses acoplamentos, mas não totalmente. Quando se cria duas classe, uma delas, no lugar dela se tornar um tipo primitivo, números, ela pode se tornar uma referência da outra classe.
 // CURIOSIDADE: Elas podem ser utilizadas para Springboot, Service e APIs.
 
 # SOLID
