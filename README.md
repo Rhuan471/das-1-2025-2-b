@@ -116,8 +116,8 @@ class Stack<T> {
 // Seu foco é na parte do serviço utilizando a regra de negócio, fazendo algo perfeito. Ou seja, é um princípio de design de software que afirma que uma classe ou módulo deve ter apenas uma razão para mudar. Em outras palavras, cada classe deve ter apenas uma responsabilidade, uma única tarefa ou função que ela deve desempenhar.
 
 # Prefira composição a herança
-° Herança de classe: É quando o código é utilizado mais de uma vez.
-° Herança de interfaces: 
+- Herança de classe: É quando o código é utilizado mais de uma vez.
+- Herança de interfaces: 
 
 // ----------> herança
 // - - - - - > implementação
