@@ -193,10 +193,11 @@ class Main {
 // Também chamado de Princípio do Menor Conhecimento, defende que a implementação de um método deve invocar apenas os seguintes outros métodos:
 // Todo código que escrever deve chamar objetos que estão dentro da classe, ou no máximo, coisas que eu recebo por parâmetros.
 // Nunca se recebe por coisas globais.
-. De sua própria classe (caso 1)
-. de objetos passados com parâmetros (caso 2)
-. de objetos criados pelo próprio método (caso 3)
-. de atributos da classe do método (caso 4)
+
+- De sua própria classe (caso 1)
+- de objetos passados com parâmetros (caso 2)
+- de objetos criados pelo próprio método (caso 3)
+- de atributos da classe do método (caso 4)
 
 public class Janelinha2 extends JFrame{
     private JTable tabelinha;
