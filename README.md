@@ -116,10 +116,10 @@ class Stack<T> {
 // Seu foco é na parte do serviço utilizando a regra de negócio, fazendo algo perfeito. Ou seja, é um princípio de design de software que afirma que uma classe ou módulo deve ter apenas uma razão para mudar. Em outras palavras, cada classe deve ter apenas uma responsabilidade, uma única tarefa ou função que ela deve desempenhar.
 
 # Prefira composição a herança
-- Herança de classe: É quando o código é utilizado mais de uma vez.
-- Herança de interfaces: 
+- Herança de classe: É quando o código é utilizado mais de uma vez. O princípio, porém, não proíbe o uso de herança. Mas ele recomenda: se existirem duas soluções de projeto, uma baseada em herança e outra em composição, a solução por meio de composição, normalmente, é a melhor. Só para deixar claro, existe uma relação de composição entre duas classes A e B quando a classe A possui um atributo do tipo B.
+- Herança de interfaces: Acreditava-se que o conceito seria talvez uma bala de prata capaz de resolver os problemas de reúso de software. Argumentava-se que hierarquias de classes profundas, com vários níveis, seriam um indicativo de um bom projeto, no qual foi possível atingir elevados índices de reúso. Um mecanismo onde uma classe (a subclasse ou classe filha) adquire propriedades e comportamentos de outra classe (a superclasse ou classe mãe).
 
-// ----------> herança
+// ----------> herança (é um relacionamento "é um" (IS-A), onde uma classe (filha) herda características de outra classe (mãe), como entre Cão e um Gato é um Animal.)
 // - - - - - > implementação
 // ---------|> associação (mais indicado para usá-la quanto a herança)
 
