@@ -120,7 +120,7 @@ class Stack<T> {
 // ----------> herança
 
 # Princípio da Segregação de Interfaces
-// O Princípio de Segregação de Interface (ISP) determina queos clientes não devem ser forçados a depender de métodos que não usamEm vez disso , interfaces grandes devem ser divididas em interfaces menores e mais específicas, garantindo que os clientes implementem apenas a funcionalidade necessária. Isso promove a modularidade, reduz o acoplamento e melhora a manutenibilidade do código.
+// O Princípio de Segregação de Interface (ISP) determina que os clientes não devem ser forçados a depender de métodos que não usam. Em vez disso , interfaces grandes devem ser divididas em interfaces menores e mais específicas, garantindo que os clientes implementem apenas a funcionalidade necessária. Isso promove a modularidade, reduz o acoplamento e melhora a manutenibilidade do código.
 
 interface Funcionario {
 
