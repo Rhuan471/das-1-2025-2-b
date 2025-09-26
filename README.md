@@ -4,13 +4,24 @@
 // Gestão de Qualidade de Software: o curso promove uma formação que propice ao egresso atuar na definição, verificação, validação e evolução de processos, técnicas e metodologias de desenvolvimento de softwares dentro da perspectiva da gestão da quqlidade do processo e do produto de software.
 
 # Abstração
-// é uma representação simplificada de uma entidade, sendo aplicada em computação
+// É uma representação simplificada de uma entidade, sendo aplicada em computação, ou seja, um processo de simplificar algo complexo, focando nos detalhes essenciais e ignorando os detalhes irrelevantes para um determinado propósito. É uma representação que esconde a complexidade interna de um sistema, permitindo que utilizadores ou outros sistemas interajam com ele através de uma interface mais simples e fácil de entender.
+// Sua importânicia é:
+- Reduz a complexidade: Torna o desenvolvimento e a manutenção de sistemas complexos mais gerenciáveis, ao dividir o sistema em partes menores e mais fáceis de entender. 
+- Foco no essencial: Permite que os programadores se concentrem nos aspetos mais importantes de um sistema, sem se perderem nos detalhes técnicos. 
+// APIs (Interfaces de Programação de Aplicações) e Tipos de Dados Abstratos são exemplos essenciais para o uso de abstrações para se aplicar nas entidades. repositórios, controladores e serviços.
 
 // 1° Entity     - Dados
 // 2° repository (CRUD) JPA spring data
 // 3° services (PUT, POST, DELETE) USE CASES (lógica)
 // controller (API REST)
 
+# Complexidade (Desvantagem da Abstração)
+// As principais desvantagens da abstração da complexidade de um software incluem o aumento da complexidade do código (com múltiplas camadas de abstração), a redução do desempenho (devido à sobrecarga das camadas), o aumento do tempo de desenvolvimento e custos, a dificuldade na depuração e integração e, em alguns casos, a perda de clareza e a criação de excesso de código.
+// Alguns outros exemplos dessa desvantagem da abstração é:
+- Redução de Desempenho: A sobrecarga adicional para lidar com as abstrações e executar códigos que não são necessários em todos os cenários de uso pode tornar o software mais lento. 
+- Sobrecarga de Desenvolvimento: Abstrações mal projetadas podem aumentar o tempo e o custo de desenvolvimento, atrasando a entrega do software. 
+- Aumento da complexidade: Em vez de reduzir a complexidade, um excesso de camadas de abstração pode criar um sistema ainda mais complexo, especialmente em bases de código grandes.
+- Falta de flexibilidade: Abstrações muito rígidas ou genéricas demais podem dificultar futuras modificações. Se a abstração não acomodar adequadamente um novo requisito, o desenvolvedor pode ser forçado a "quebrar" a abstração existente ou adicionar mais uma camada, aumentando ainda mais a complexidade.
 
 # Arquiteto de Framework
 // Um "Arquiteto de Framework" é um profissional responsável por projetar, desenvolver e gerenciar frameworks (estruturas) de software, que são conjuntos de ferramentas e práticas reutilizáveis para acelerar o desenvolvimento de aplicações. Essa função envolve a criação de bases sólidas para sistemas complexos, garantindo padrões, consistência e eficiência no desenvolvimento. 
