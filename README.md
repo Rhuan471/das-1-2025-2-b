@@ -298,6 +298,21 @@ f(new B3());  // e B3
 // Na figura 2.8: Mecanismo de tópico, no tópico (broker) se inscreve como assinantes (subscribers), e o publisher envia uma mensagem e cada um recebe a mesma mensagem. Assim como se implementa uma design patterns dentro do processo de um sistema operacional. Um exemplo desse tópico é apache Kafka, AWS SNS, Azure, ServiceBus, são uma plataforma distribuída de streaming de eventos de código aberto, concebida para lidar com grandes volumes de dados em tempo real, atuando como uma fonte de dados durável e confiável para a construção de pipelines e aplicações de streaming de alta performance.
 // Na figura 2.9: nessa figura, quem dá o lance, é um sender, o item do lance é a ordem de armazenamento, e Aanalisar lance é quem recebe.
 
+# Tópicos e Filas
+- Tópicos: Um publisher envia uma mensagem para o Tópico (Broker) e todos os subscribers recebem a mesma mensagem. Ou seja, toda vez que alguém publica uma mensagem no tópico, todo mundo que está inscrito, todos os computadores ou sistemas recebem a mesma mensagem.
+- Fila: Um publisher (sender) envia uma mensagem para a Fila (caixinha de correio) e cada subscriber (receivers) deve ir até a Fila para receber a mensagem. A Fila armazena a mensagem e fica disponível para regaste o tempo todo.
+
+- Diferença entre Tópico e Fila:
+// No Tópico temos menor acoplamento, porém o publisher precisa atender as necessidades de todos os subscribers.
+//Já na Fila, o acoplamento é maior, porém o publisher (sender) consegue dividir a mensagem para atender apenas a necessidade especificas dos subscribers (receivers).
+
+# Expectativas de um arquiteto de software
+// As expectativas sobre um arquiteto de software incluem o design de sistemas robustos, escaláveis e seguros que atendam aos requisitos funcionais e não funcionais do negócio.
+- Projetar a Estrutura do Sistema: Definir a arquitetura e a estrutura de alto nível de um sistema de software, escolhendo os componentes tecnológicos e o seu modo de interação. 
+- Assegurar Qualidade e Desempenho: Focar em atributos de qualidade como escalabilidade, disponibilidade, confiabilidade, manutenibilidade, portabilidade e segurança do sistema.
+
+#
+  
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
 - [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
