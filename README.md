@@ -1,5 +1,5 @@
     Design Arquitetura de Sistemas
-    # OBJETIVO
+# OBJETIVO
 // Desenvolvimento de Software: o curso promove uma formação que propicie ao egresso. atuar na especificação, desenvolvimento, manutenção e evolução de softwares. Isso inclui a capacidade de atuar nas diversas etapas do processo de desenvolvimento de softwares/sistemas de informação.
 // Gestão de Qualidade de Software: o curso promove uma formação que propice ao egresso atuar na definição, verificação, validação e evolução de processos, técnicas e metodologias de desenvolvimento de softwares dentro da perspectiva da gestão da quqlidade do processo e do produto de software.
 
@@ -13,7 +13,7 @@
 // 1° Entity     - Dados
 // 2° repository (CRUD) JPA spring data
 // 3° services (PUT, POST, DELETE) USE CASES (lógica)
-// controller (API REST)
+// 4° controller (API REST)
 
 # Complexidade (Desvantagem da Abstração)
 // As principais desvantagens da abstração da complexidade de um software incluem o aumento da complexidade do código (com múltiplas camadas de abstração), a redução do desempenho (devido à sobrecarga das camadas), o aumento do tempo de desenvolvimento e custos, a dificuldade na depuração e integração e, em alguns casos, a perda de clareza e a criação de excesso de código.
@@ -85,6 +85,19 @@ class Aluno {
    }
   
 }
+
+# Princípios de projeto de código
+// As boas práticas nos princípios do projeto incluem definir objetivos claros, um escopo bem delimitado e um plano de trabalho detalhado, que abrange o cronograma, os recursos e o orçamento. Além disso, é essencial garantir uma comunicação eficaz, gerir riscos e mudanças, monitorar o progresso, montar uma equipa qualificada e promover a colaboração, focando sempre na entrega de valor ao cliente. 
+
+# Padronização de código
+// Ele pode tornar os padrões de códigos mais flexíveis e fáceis de entender, ganhando tempo e reduzindo a sua reprodução, usa o termo módulo no seu artigo, mas isso em uma época em que orientação a objetos ainda não havia surgido, pelo menos como conhecemos hoje. Já neste capítulo, escrito quase 50 anos após o trabalho de Parnas, optamos pelo termo classe, em vez de módulo. O motivo é que classes são a principal unidade de modularização de linguagens de programação modernas, como Java, C++ e Ruby. No entanto, o conteúdo do capítulo aplica-se a outras unidades de modularização, incluindo aquelas menores do que classes, como métodos e funções; e também a unidades maiores, como pacotes e componentes.
+
+# Ocultamento de Informação
+// Projetamos o sistema, fizemos as abstrações, escondemos as informações (complexidade) através da API e expomos apenas a Interface para o consumidor final. Na POO esse ocultamento ocorre nas Classes (ex: quando colocamos Private nela). Vantagens do Ocultamento de Informações:
+
+- Desenvolvimento em paralelo.
+- Flexibilidade a mudanças.
+- Facilidade de entendimento.
 
 # Coesão
 // Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
@@ -255,17 +268,13 @@ f(new B3());  // e B3
 // Interface: com o método "Update", tendo (context) que é uma informação, ele se atualiza, recebendo informações da comunicação.
 
 # Características da Arquitetura
-// Requisitos Não funcionais
+// As características da arquitetura não funcional definem os atributos de qualidade e as restrições operacionais de um sistema, focando no como ele deve operar, e não no que ele faz. Essas características incluem desempenho (velocidade e tempo de resposta), segurança (proteção contra acesso não autorizado), confiabilidade (disponibilidade e tolerância a falhas), escalabilidade (capacidade de lidar com o crescimento), usabilidade (facilidade de uso), manutenibilidade (facilidade de manutenção e modificação) e portabilidade (capacidade de rodar em diferentes ambientes).
 // Concrete Subscriber implementa -------> interface
-
 
 
 # Expectativa de um Arquiteto
 // Para tomar "Atitude da arquitetura", Orientação é a palavra de ordem em primeira expectativa.
 // framework reativo para o desenvolvimento web front-end.
-
-# Analisar Continuamente a Arquitetura
-
 
 # Diferença entre Arquitetura e Design
 // Arquitetura: Foca nas estruturas do softwares no seu estilos monolitos e microsserviços, é responsável por coisas como analisar os requisitos comerciais para extrair e definir as características da arquitetura (os “atributos”), selecionar quais padrões e estilos da arquitetura se encaixariam no domínio do problema e criar componentes (blocos de construção do sistema). um arquiteto de software deve ter uma grande amplitude técnica para pensar.
@@ -279,3 +288,12 @@ f(new B3());  // e B3
 // Na figura 2.7: Nesta arquitetura mais simples, a vantagem como essa é quando se insere o lance, mais de um sistema pode selecionar o lance. Qunado a performance do banco de dados se limita ao excesso de uso no sistema.
 // Na figura 2.8: Mecanismo de tópico, no tópico (broker) se inscreve como assinantes (subscribers), e o publisher envia uma mensagem e cada um recebe a mesma mensagem. Assim como se implementa uma design patterns dentro do processo de um sistema operacional. Um exemplo desse tópico é apache Kafka, AWS SNS, Azure, ServiceBus, são uma plataforma distribuída de streaming de eventos de código aberto, concebida para lidar com grandes volumes de dados em tempo real, atuando como uma fonte de dados durável e confiável para a construção de pipelines e aplicações de streaming de alta performance.
 // Na figura 2.9: nessa figura, quem dá o lance, é um sender, o item do lance é a ordem de armazenamento, e Aanalisar lance é quem recebe.
+
+# ReferÊncias
+- [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
+- [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
+- [Livro Fundamentos da Arquitetura de Software](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/2[%3Bvnd.vst.idref%3Dcover]!/4/2/2%4051:77)
+- [Livro Código Limpo](https://integrada.minhabiblioteca.com.br/reader/books/9788550816043/pageid/0)
+- [Livro Padrões de Projeto](https://integrada.minhabiblioteca.com.br/reader/books/9788577800469/pageid/0)
+- [Site DESIGN PATTERNS](https://refactoring.guru/pt-br/design-patterns)
+- [Introdução a DevOps](https://learn.microsoft.com/pt-br/training/modules/introduction-to-devops/2-what-is-devops?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.az-400-work-git-for-enterprise-devops )
