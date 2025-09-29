@@ -271,6 +271,15 @@ f(new B3());  // e B3
 // As características da arquitetura não funcional definem os atributos de qualidade e as restrições operacionais de um sistema, focando no como ele deve operar, e não no que ele faz. Essas características incluem desempenho (velocidade e tempo de resposta), segurança (proteção contra acesso não autorizado), confiabilidade (disponibilidade e tolerância a falhas), escalabilidade (capacidade de lidar com o crescimento), usabilidade (facilidade de uso), manutenibilidade (facilidade de manutenção e modificação) e portabilidade (capacidade de rodar em diferentes ambientes).
 // Concrete Subscriber implementa -------> interface
 
+# DevOps
+// DevOps é um conjunto de práticas, ferramentas e uma filosofia cultural que automatizam e integram os processos entre o desenvolvimento de software e as equipes de TI. Ele enfatiza o empoderamento da equipe, a comunicação e a colaboração entre equipes e a automação da tecnologia.
+//Ao adotar práticas de DevOps:
+
+- Reduz o tempo de ciclo trabalhando em lotes menores.
+- Usa mais automação.
+- Protege seu pipeline de lançamento.
+- Melhora sua telemetria.
+- Implanta com mais frequência.
 
 # Expectativa de um Arquiteto
 // Para tomar "Atitude da arquitetura", Orientação é a palavra de ordem em primeira expectativa.
@@ -289,7 +298,7 @@ f(new B3());  // e B3
 // Na figura 2.8: Mecanismo de tópico, no tópico (broker) se inscreve como assinantes (subscribers), e o publisher envia uma mensagem e cada um recebe a mesma mensagem. Assim como se implementa uma design patterns dentro do processo de um sistema operacional. Um exemplo desse tópico é apache Kafka, AWS SNS, Azure, ServiceBus, são uma plataforma distribuída de streaming de eventos de código aberto, concebida para lidar com grandes volumes de dados em tempo real, atuando como uma fonte de dados durável e confiável para a construção de pipelines e aplicações de streaming de alta performance.
 // Na figura 2.9: nessa figura, quem dá o lance, é um sender, o item do lance é a ordem de armazenamento, e Aanalisar lance é quem recebe.
 
-# ReferÊncias
+# Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
 - [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
 - [Livro Fundamentos da Arquitetura de Software](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/2[%3Bvnd.vst.idref%3Dcover]!/4/2/2%4051:77)
