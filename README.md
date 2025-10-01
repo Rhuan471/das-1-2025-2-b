@@ -283,7 +283,30 @@ f(new B3());  // e B3
 
 # Expectativa de um Arquiteto
 // Para tomar "Atitude da arquitetura", Orientação é a palavra de ordem em primeira expectativa.
-// framework reativo para o desenvolvimento web front-end.
+// Definir o papel de um arquiteto de software se mostra tão difícil quanto definir a arquitetura de software. Pode variar desde um programador especializado até definir a direção técnica estratégica para a empresa. Em vez de perder tempo com a busca inútil de definir a função, recomendamos focar as expectativas de um arquiteto.
+// Framework reativo para o desenvolvimento web front-end.
+// Nessas oito expectativas principais de um arquiteto que são: 
+- Tomar decisões de arquitetura;
+- Analisar continuamente a arquitetura;
+- Manter-se atualizado com as últimas tendências;
+- Assegurar a conformidade com as decisões;
+- Exposição e experiência diversificadas;
+- Ter conhecimento sobre o domínio do negócio;
+-Ter habilidades interpessoais;
+- Entender e lidar bem com questões políticas.
+
+# Na Decisão de Arquitetura
+// Orientação é a palavra de ordem nessa primeira expectativa. Um arquiteto deve orientar, não especificar as escolhas da tecnologia. Por exemplo, um arquiteto pode tomar a decisão de usar React.js para um desenvolvimento front-end. Nesse caso, ele está tomando uma decisão técnica, não uma decisão arquitetural ou um princípio do design que ajudará a equipe de desenvolvimento a fazer escolhas. Um arquiteto deve instruir as equipes de desenvolvimento para usarem um framework reativo para o desenvolvimento web front-end, orientando a equipe ao fazer a escolha entre Angular, Elm, React.js, Vue ou qualquer outro framework web reativo.
+
+# Analisar Continuamente a Arquitetura
+// Um arquiteto deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias. Essa expectativa de um arquiteto se refere à vitalidade da arquitetura, que avalia se uma arquitetura é viável hoje tendo sido definida há três anos ou mais, dadas as mudanças no negócio e na tecnologia. Conforme nossa experiência, poucos arquitetos focam suas energias em analisar continuamente as arquiteturas existentes. Como resultado, a maioria deles enfrenta elementos de decadência estrutural, o que ocorre quando os desenvolvedores fazem mudanças no código ou no design que impactam as características arquiteturais requeridas, como desempenho, disponibilidade e escalabilidade.
+
+# Manter Atualização com as últimas tendências
+// Um arquiteto deve ficar atualizado com as últimas tendências da tecnologia e do setor. Os desenvolvedores devem ficar atualizados com as últimas tecnologias usadas diariamente para manterem a si mesmos (e seu trabalho!) relevantes. Um arquiteto tem um requisito ainda mais crítico de se manter atual com as últimas tendências técnicas e do setor. As decisões que um arquiteto toma tendem a ser de longo prazo e difíceis de mudar. Entender e seguir as principais tendências contribui para que ele se prepare para o futuro e tome a decisão certa.
+// Seguir as tendências e se manter atualizado com elas é difícil, sobretudo para um arquiteto de software. No Capítulo 24, examinaremos as várias técnicas e recursos sobre como fazer isso.
+
+# Domínio de Negócios
+// Um arquiteto deve ter certo nível de especialização no domínio do negócio. Os arquitetos de software eficientes entendem não apenas de tecnologia, mas do domínio do negócio no espaço do problema. Sem conhecimento do domínio do negócio, fica difícil entender o problema comercial, as metas e os requisitos, complicando planejar uma arquitetura eficiente para atender aos requisitos da empresa. Imagine ser arquiteto em uma grande instituição financeira e não entender os termos financeiros comuns, como índice direcional médio, contratos aleatórios, aumento das taxas ou mesmo dívida não prioritária. Sem esse conhecimento, um arquiteto não consegue se comunicar com os stakeholders e com os usuários do negócio, perdendo rápido a credibilidade.
 
 # Diferença entre Arquitetura e Design
 // Arquitetura: Foca nas estruturas do softwares no seu estilos monolitos e microsserviços, é responsável por coisas como analisar os requisitos comerciais para extrair e definir as características da arquitetura (os “atributos”), selecionar quais padrões e estilos da arquitetura se encaixariam no domínio do problema e criar componentes (blocos de construção do sistema). um arquiteto de software deve ter uma grande amplitude técnica para pensar.
