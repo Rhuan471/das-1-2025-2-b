@@ -1,16 +1,31 @@
     Design Arquitetura de Sistemas
+<<<<<<< HEAD
     # OBJETIVO
+=======
+# OBJETIVO
+>>>>>>> 0583b1baad6d81ee23a8c8c819297753a4ff0829
 // Desenvolvimento de Software: o curso promove uma formação que propicie ao egresso. atuar na especificação, desenvolvimento, manutenção e evolução de softwares. Isso inclui a capacidade de atuar nas diversas etapas do processo de desenvolvimento de softwares/sistemas de informação.
 // Gestão de Qualidade de Software: o curso promove uma formação que propice ao egresso atuar na definição, verificação, validação e evolução de processos, técnicas e metodologias de desenvolvimento de softwares dentro da perspectiva da gestão da quqlidade do processo e do produto de software.
 
 # Abstração
-// é uma representação simplificada de uma entidade, sendo aplicada em computação
+// É uma representação simplificada de uma entidade, sendo aplicada em computação, ou seja, um processo de simplificar algo complexo, focando nos detalhes essenciais e ignorando os detalhes irrelevantes para um determinado propósito. É uma representação que esconde a complexidade interna de um sistema, permitindo que utilizadores ou outros sistemas interajam com ele através de uma interface mais simples e fácil de entender.
+// Sua importânicia é:
+- Reduz a complexidade: Torna o desenvolvimento e a manutenção de sistemas complexos mais gerenciáveis, ao dividir o sistema em partes menores e mais fáceis de entender. 
+- Foco no essencial: Permite que os programadores se concentrem nos aspetos mais importantes de um sistema, sem se perderem nos detalhes técnicos. 
+// APIs (Interfaces de Programação de Aplicações) e Tipos de Dados Abstratos são exemplos essenciais para o uso de abstrações para se aplicar nas entidades. repositórios, controladores e serviços.
 
 // 1° Entity     - Dados
 // 2° repository (CRUD) JPA spring data
 // 3° services (PUT, POST, DELETE) USE CASES (lógica)
-// controller (API REST)
+// 4° controller (API REST)
 
+# Complexidade (Desvantagem da Abstração)
+// As principais desvantagens da abstração da complexidade de um software incluem o aumento da complexidade do código (com múltiplas camadas de abstração), a redução do desempenho (devido à sobrecarga das camadas), o aumento do tempo de desenvolvimento e custos, a dificuldade na depuração e integração e, em alguns casos, a perda de clareza e a criação de excesso de código.
+// Alguns outros exemplos dessa desvantagem da abstração é:
+- Redução de Desempenho: A sobrecarga adicional para lidar com as abstrações e executar códigos que não são necessários em todos os cenários de uso pode tornar o software mais lento. 
+- Sobrecarga de Desenvolvimento: Abstrações mal projetadas podem aumentar o tempo e o custo de desenvolvimento, atrasando a entrega do software. 
+- Aumento da complexidade: Em vez de reduzir a complexidade, um excesso de camadas de abstração pode criar um sistema ainda mais complexo, especialmente em bases de código grandes.
+- Falta de flexibilidade: Abstrações muito rígidas ou genéricas demais podem dificultar futuras modificações. Se a abstração não acomodar adequadamente um novo requisito, o desenvolvedor pode ser forçado a "quebrar" a abstração existente ou adicionar mais uma camada, aumentando ainda mais a complexidade.
 
 # Arquiteto de Framework
 // Um "Arquiteto de Framework" é um profissional responsável por projetar, desenvolver e gerenciar frameworks (estruturas) de software, que são conjuntos de ferramentas e práticas reutilizáveis para acelerar o desenvolvimento de aplicações. Essa função envolve a criação de bases sólidas para sistemas complexos, garantindo padrões, consistência e eficiência no desenvolvimento. 
@@ -75,11 +90,32 @@ class Aluno {
   
 }
 
+<<<<<<< HEAD
 # Coesão
 // Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
 // Todos os métodos e atributos devem estar voltados para a implementação do mesmo serviço, quando uma única funcionalidade é implementada.
 //As suas vantagens são: Facilitar a impelmentação da uma classe fazendo modificações, a sua alocação de um único responsável por amnter uma classe e o reúso de teste de uma classe.
 
+=======
+# Princípios de projeto de código
+// As boas práticas nos princípios do projeto incluem definir objetivos claros, um escopo bem delimitado e um plano de trabalho detalhado, que abrange o cronograma, os recursos e o orçamento. Além disso, é essencial garantir uma comunicação eficaz, gerir riscos e mudanças, monitorar o progresso, montar uma equipa qualificada e promover a colaboração, focando sempre na entrega de valor ao cliente. 
+
+# Padronização de código
+// Ele pode tornar os padrões de códigos mais flexíveis e fáceis de entender, ganhando tempo e reduzindo a sua reprodução, usa o termo módulo no seu artigo, mas isso em uma época em que orientação a objetos ainda não havia surgido, pelo menos como conhecemos hoje. Já neste capítulo, escrito quase 50 anos após o trabalho de Parnas, optamos pelo termo classe, em vez de módulo. O motivo é que classes são a principal unidade de modularização de linguagens de programação modernas, como Java, C++ e Ruby. No entanto, o conteúdo do capítulo aplica-se a outras unidades de modularização, incluindo aquelas menores do que classes, como métodos e funções; e também a unidades maiores, como pacotes e componentes.
+
+# Ocultamento de Informação
+// Projetamos o sistema, fizemos as abstrações, escondemos as informações (complexidade) através da API e expomos apenas a Interface para o consumidor final. Na POO esse ocultamento ocorre nas Classes (ex: quando colocamos Private nela). Vantagens do Ocultamento de Informações:
+
+- Desenvolvimento em paralelo.
+- Flexibilidade a mudanças.
+- Facilidade de entendimento.
+
+# Coesão
+// Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
+// Todos os métodos e atributos devem estar voltados para a implementação do mesmo serviço, quando uma única funcionalidade é implementada.
+//As suas vantagens são: Facilitar a impelmentação da uma classe fazendo modificações, a sua alocação de um único responsável por manter uma classe e o reúso de teste de uma classe.
+
+>>>>>>> 0583b1baad6d81ee23a8c8c819297753a4ff0829
 Exemplo:
 //Numa função de estrutua de dados, é comum definir seu serviço de uma forma mais equilibrada, sendo que nela, é feito de algumas funçoes como:
 - Pilha: Suponha agora a seguinte classe:
@@ -99,7 +135,11 @@ class Stack<T> {
   }
 }
 
+<<<<<<< HEAD
 // OBJETIVO: Reduzir esses acoplamentos, mas não totalmente. Qunado se cria duas classe, uma delas, no lugar dela se tornar um tipo primitivo, números, ela pode se tornar uma referência da outra classe.
+=======
+// OBJETIVO: Reduzir esses acoplamentos, mas não totalmente. Quando se cria duas classe, uma delas, no lugar dela se tornar um tipo primitivo, números, ela pode se tornar uma referência da outra classe.
+>>>>>>> 0583b1baad6d81ee23a8c8c819297753a4ff0829
 // CURIOSIDADE: Elas podem ser utilizadas para Springboot, Service e APIs.
 
 # SOLID
@@ -110,17 +150,26 @@ class Stack<T> {
 // Dependency Inversion Principle (Princípio da inversão da dependência)
 
 //SOLID são os 5 pricípios de um projeto que fazem mais do que realizar programas orientadas a objetos, reduzindo ou postergar essa contínua degradação da qualidade interna de sistemas de software. Em resumo, o objetivo não é apenas entregar um projeto capaz de resolver um problema, mas também que facilite manutenções futuras.
+<<<<<<< HEAD
 //Considerações: cada parte de camada tem uma função, camada de apresentação, camada de negócio, cuida de regra de negócio.
+=======
+//Considerações: cada parte de camada tem uma função, camada de apresentação, camada de negócio, cuida de regra de negócio. A principal regra sobre requisitos de software é que eles mudam com frequência. O mesmo acontece com tecnologias de implementação, como bibliotecas e frameworks.
+>>>>>>> 0583b1baad6d81ee23a8c8c819297753a4ff0829
 
 # Princípio da Responsabilidade Única
 // Seu foco é na parte do serviço utilizando a regra de negócio, fazendo algo perfeito. Ou seja, é um princípio de design de software que afirma que uma classe ou módulo deve ter apenas uma razão para mudar. Em outras palavras, cada classe deve ter apenas uma responsabilidade, uma única tarefa ou função que ela deve desempenhar.
 
+# Prefira composição a herança
+- Herança de classe: É quando o código é utilizado mais de uma vez. O princípio, porém, não proíbe o uso de herança. Mas ele recomenda: se existirem duas soluções de projeto, uma baseada em herança e outra em composição, a solução por meio de composição, normalmente, é a melhor. Só para deixar claro, existe uma relação de composição entre duas classes A e B quando a classe A possui um atributo do tipo B.
+- Herança de interfaces: Acreditava-se que o conceito seria talvez uma bala de prata capaz de resolver os problemas de reúso de software. Argumentava-se que hierarquias de classes profundas, com vários níveis, seriam um indicativo de um bom projeto, no qual foi possível atingir elevados índices de reúso. Um mecanismo onde uma classe (a subclasse ou classe filha) adquire propriedades e comportamentos de outra classe (a superclasse ou classe mãe).
+
+// ----------> herança (é um relacionamento "é um" (IS-A), onde uma classe (filha) herda características de outra classe (mãe), como entre Cão e um Gato é um Animal.)
 // - - - - - > implementação
 // ---------|> associação (mais indicado para usá-la quanto a herança)
-// ----------> herança
+
 
 # Princípio da Segregação de Interfaces
-// O Princípio de Segregação de Interface (ISP) determina queos clientes não devem ser forçados a depender de métodos que não usamEm vez disso , interfaces grandes devem ser divididas em interfaces menores e mais específicas, garantindo que os clientes implementem apenas a funcionalidade necessária. Isso promove a modularidade, reduz o acoplamento e melhora a manutenibilidade do código.
+// O Princípio de Segregação de Interface (ISP) determina que os clientes não devem ser forçados a depender de métodos que não usam. Em vez disso , interfaces grandes devem ser divididas em interfaces menores e mais específicas, garantindo que os clientes implementem apenas a funcionalidade necessária. Isso promove a modularidade, reduz o acoplamento e melhora a manutenibilidade do código.
 
 interface Funcionario {
 
@@ -151,14 +200,15 @@ interface FuncionarioPublico extends Funcionario {
 }
 
 # Princípio de Inversão de Dependências
-// Classe cliente (controladores) se estabelece prioritariamente com abstrações (interfaces de serviço)
-// A ideia é então trocar (ou inverter) as dependências: em vez de depender de classes concretas, clientes devem depender de interfaces. Portanto, um nome mais intuitivo para o princípio seria Prefira Interfaces a Classes.
+// A ideia é então trocar (ou inverter) as dependências: em vez de depender de classes para fazer implementações concretas, clientes devem depender de interfaces, pois a classe cliente (controladores) se estabelece prioritariamente com abstrações (interfaces de serviço). Portanto, um nome mais intuitivo para o princípio seria Prefira Interfaces a Classes.
 
+//ClienteService
 interface I { ... }
-
+//ClienteServiceImpl
 class C1 implements I {
   ...
 }
+//ClienteServiceImpl2
 class C2 implements I {
   ...
 }
@@ -187,10 +237,11 @@ class Main {
 // Também chamado de Princípio do Menor Conhecimento, defende que a implementação de um método deve invocar apenas os seguintes outros métodos:
 // Todo código que escrever deve chamar objetos que estão dentro da classe, ou no máximo, coisas que eu recebo por parâmetros.
 // Nunca se recebe por coisas globais.
-. De sua própria classe (caso 1)
-. de objetos passados com parâmetros (caso 2)
-. de objetos criados pelo próprio método (caso 3)
-. de atributos da classe do método (caso 4)
+
+- De sua própria classe (caso 1)
+- de objetos passados com parâmetros (caso 2)
+- de objetos criados pelo próprio método (caso 3)
+- de atributos da classe do método (caso 4)
 
 public class Janelinha2 extends JFrame{
     private JTable tabelinha;
@@ -213,36 +264,21 @@ public class Janelinha2 extends JFrame{
 }
 
 # Princípio de Substituição de Liskov
-// O Princípio de Substituição de Liskov explicita regras para redefinição de métodos de classes base em classes filhas. O nome do princípio é uma referência a Barbara Liskov, professora do MIT e ganhadora da edição de 2008 do Prêmio Turing. Dentre outros trabalhos, Liskov desenvolveu pesquisas sobre sistemas de tipos para linguagens orientadas a objetos. Em um desses trabalhos, ela enunciou o princípio que depois ganhou seu nome.
+// O Princípio de Substituição de Liskov (LSP) é um conceito da programação orientada a objetos que estabelece que, se uma classe B é uma subtipo de uma classe A, então os objetos de B devem poder ser substituídos por objetos de A sem que isso afete a execução correta do programa, mantendo o comportamento esperado. Isso significa que a subclasse não deve "quebrar" ou alterar o comportamento da superclasse, e deve ser totalmente compatível com ela. 
+Para explicar o Princípio de Substituição de Liskov vamos nos basear no seguinte exemplo:
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-
-public class Janelinha3 extends JFrame{
-
-    private JPanel painel;
-
-    public Janelinha3() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(500,500);
-        painel = new JPanel();
-        painel.setBackground(Color.ORANGE);
-        painel.setPreferredSize(new Dimension(200,200));
-        setLayout(new FlowLayout());
-
-        painel.setBorder(new LineBorder(Color.BLACK));
-        painel.setBorder(new TitledBorder("TITULO"));
-
-        add(painel);
-
-        setVisible(true);
-        
-    }
-    public static void main(String[] args) {
-        new Janelinha3();
-    }
+void f(A a) {
+  ...
+  a.g();
+  ...
 }
+O método f pode ser chamado passando-se como parâmetros objetos de subclasses B1, B2, …, Bn da classe base A, como mostrado a seguir:
+
+f(new B1());  // f pode receber objetos da subclasse B1 
+...
+f(new B2());  // e de qualquer subclasse de A, como B2
+...
+f(new B3());  // e B3
 
 # Ocultamento de Informações
 // Na orientação de objetos, fazer com esse conceito seja implementado para poder possibilitar o desenvolvimento do software. 
@@ -252,17 +288,45 @@ public class Janelinha3 extends JFrame{
 // Interface: com o método "Update", tendo (context) que é uma informação, ele se atualiza, recebendo informações da comunicação.
 
 # Características da Arquitetura
-// Requisitos Não funcionais
+// As características da arquitetura não funcional definem os atributos de qualidade e as restrições operacionais de um sistema, focando no como ele deve operar, e não no que ele faz. Essas características incluem desempenho (velocidade e tempo de resposta), segurança (proteção contra acesso não autorizado), confiabilidade (disponibilidade e tolerância a falhas), escalabilidade (capacidade de lidar com o crescimento), usabilidade (facilidade de uso), manutenibilidade (facilidade de manutenção e modificação) e portabilidade (capacidade de rodar em diferentes ambientes).
 // Concrete Subscriber implementa -------> interface
 
+# DevOps
+// DevOps é um conjunto de práticas, ferramentas e uma filosofia cultural que automatizam e integram os processos entre o desenvolvimento de software e as equipes de TI. Ele enfatiza o empoderamento da equipe, a comunicação e a colaboração entre equipes e a automação da tecnologia.
+//Ao adotar práticas de DevOps:
 
+- Reduz o tempo de ciclo trabalhando em lotes menores.
+- Usa mais automação.
+- Protege seu pipeline de lançamento.
+- Melhora sua telemetria.
+- Implanta com mais frequência.
 
 # Expectativa de um Arquiteto
 // Para tomar "Atitude da arquitetura", Orientação é a palavra de ordem em primeira expectativa.
-// framework reativo para o desenvolvimento web front-end.
+// Definir o papel de um arquiteto de software se mostra tão difícil quanto definir a arquitetura de software. Pode variar desde um programador especializado até definir a direção técnica estratégica para a empresa. Em vez de perder tempo com a busca inútil de definir a função, recomendamos focar as expectativas de um arquiteto.
+// Framework reativo para o desenvolvimento web front-end.
+// Nessas oito expectativas principais de um arquiteto que são: 
+- Tomar decisões de arquitetura;
+- Analisar continuamente a arquitetura;
+- Manter-se atualizado com as últimas tendências;
+- Assegurar a conformidade com as decisões;
+- Exposição e experiência diversificadas;
+- Ter conhecimento sobre o domínio do negócio;
+-Ter habilidades interpessoais;
+- Entender e lidar bem com questões políticas.
+
+# Na Decisão de Arquitetura
+// Orientação é a palavra de ordem nessa primeira expectativa. Um arquiteto deve orientar, não especificar as escolhas da tecnologia. Por exemplo, um arquiteto pode tomar a decisão de usar React.js para um desenvolvimento front-end. Nesse caso, ele está tomando uma decisão técnica, não uma decisão arquitetural ou um princípio do design que ajudará a equipe de desenvolvimento a fazer escolhas. Um arquiteto deve instruir as equipes de desenvolvimento para usarem um framework reativo para o desenvolvimento web front-end, orientando a equipe ao fazer a escolha entre Angular, Elm, React.js, Vue ou qualquer outro framework web reativo.
 
 # Analisar Continuamente a Arquitetura
+// Um arquiteto deve analisar continuamente a arquitetura e o ambiente de tecnologia atual, para então recomendar soluções de melhorias. Essa expectativa de um arquiteto se refere à vitalidade da arquitetura, que avalia se uma arquitetura é viável hoje tendo sido definida há três anos ou mais, dadas as mudanças no negócio e na tecnologia. Conforme nossa experiência, poucos arquitetos focam suas energias em analisar continuamente as arquiteturas existentes. Como resultado, a maioria deles enfrenta elementos de decadência estrutural, o que ocorre quando os desenvolvedores fazem mudanças no código ou no design que impactam as características arquiteturais requeridas, como desempenho, disponibilidade e escalabilidade.
 
+# Manter Atualização com as últimas tendências
+// Um arquiteto deve ficar atualizado com as últimas tendências da tecnologia e do setor. Os desenvolvedores devem ficar atualizados com as últimas tecnologias usadas diariamente para manterem a si mesmos (e seu trabalho!) relevantes. Um arquiteto tem um requisito ainda mais crítico de se manter atual com as últimas tendências técnicas e do setor. As decisões que um arquiteto toma tendem a ser de longo prazo e difíceis de mudar. Entender e seguir as principais tendências contribui para que ele se prepare para o futuro e tome a decisão certa.
+// Seguir as tendências e se manter atualizado com elas é difícil, sobretudo para um arquiteto de software. No Capítulo 24, examinaremos as várias técnicas e recursos sobre como fazer isso.
+
+# Domínio de Negócios
+// Um arquiteto deve ter certo nível de especialização no domínio do negócio. Os arquitetos de software eficientes entendem não apenas de tecnologia, mas do domínio do negócio no espaço do problema. Sem conhecimento do domínio do negócio, fica difícil entender o problema comercial, as metas e os requisitos, complicando planejar uma arquitetura eficiente para atender aos requisitos da empresa. Imagine ser arquiteto em uma grande instituição financeira e não entender os termos financeiros comuns, como índice direcional médio, contratos aleatórios, aumento das taxas ou mesmo dívida não prioritária. Sem esse conhecimento, um arquiteto não consegue se comunicar com os stakeholders e com os usuários do negócio, perdendo rápido a credibilidade.
 
 # Diferença entre Arquitetura e Design
 // Arquitetura: Foca nas estruturas do softwares no seu estilos monolitos e microsserviços, é responsável por coisas como analisar os requisitos comerciais para extrair e definir as características da arquitetura (os “atributos”), selecionar quais padrões e estilos da arquitetura se encaixariam no domínio do problema e criar componentes (blocos de construção do sistema). um arquiteto de software deve ter uma grande amplitude técnica para pensar.
@@ -276,3 +340,27 @@ public class Janelinha3 extends JFrame{
 // Na figura 2.7: Nesta arquitetura mais simples, a vantagem como essa é quando se insere o lance, mais de um sistema pode selecionar o lance. Qunado a performance do banco de dados se limita ao excesso de uso no sistema.
 // Na figura 2.8: Mecanismo de tópico, no tópico (broker) se inscreve como assinantes (subscribers), e o publisher envia uma mensagem e cada um recebe a mesma mensagem. Assim como se implementa uma design patterns dentro do processo de um sistema operacional. Um exemplo desse tópico é apache Kafka, AWS SNS, Azure, ServiceBus, são uma plataforma distribuída de streaming de eventos de código aberto, concebida para lidar com grandes volumes de dados em tempo real, atuando como uma fonte de dados durável e confiável para a construção de pipelines e aplicações de streaming de alta performance.
 // Na figura 2.9: nessa figura, quem dá o lance, é um sender, o item do lance é a ordem de armazenamento, e Aanalisar lance é quem recebe.
+
+# Tópicos e Filas
+- Tópicos: Um publisher envia uma mensagem para o Tópico (Broker) e todos os subscribers recebem a mesma mensagem. Ou seja, toda vez que alguém publica uma mensagem no tópico, todo mundo que está inscrito, todos os computadores ou sistemas recebem a mesma mensagem.
+- Fila: Um publisher (sender) envia uma mensagem para a Fila (caixinha de correio) e cada subscriber (receivers) deve ir até a Fila para receber a mensagem. A Fila armazena a mensagem e fica disponível para regaste o tempo todo.
+
+- Diferença entre Tópico e Fila:
+// No Tópico temos menor acoplamento, porém o publisher precisa atender as necessidades de todos os subscribers.
+//Já na Fila, o acoplamento é maior, porém o publisher (sender) consegue dividir a mensagem para atender apenas a necessidade especificas dos subscribers (receivers).
+
+# Expectativas de um arquiteto de software
+// As expectativas sobre um arquiteto de software incluem o design de sistemas robustos, escaláveis e seguros que atendam aos requisitos funcionais e não funcionais do negócio.
+- Projetar a Estrutura do Sistema: Definir a arquitetura e a estrutura de alto nível de um sistema de software, escolhendo os componentes tecnológicos e o seu modo de interação. 
+- Assegurar Qualidade e Desempenho: Focar em atributos de qualidade como escalabilidade, disponibilidade, confiabilidade, manutenibilidade, portabilidade e segurança do sistema.
+
+#
+  
+# Referências
+- [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
+- [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
+- [Livro Fundamentos da Arquitetura de Software](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/2[%3Bvnd.vst.idref%3Dcover]!/4/2/2%4051:77)
+- [Livro Código Limpo](https://integrada.minhabiblioteca.com.br/reader/books/9788550816043/pageid/0)
+- [Livro Padrões de Projeto](https://integrada.minhabiblioteca.com.br/reader/books/9788577800469/pageid/0)
+- [Site DESIGN PATTERNS](https://refactoring.guru/pt-br/design-patterns)
+- [Introdução a DevOps](https://learn.microsoft.com/pt-br/training/modules/introduction-to-devops/2-what-is-devops?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.az-400-work-git-for-enterprise-devops )
