@@ -1,9 +1,6 @@
     Design Arquitetura de Sistemas
-<<<<<<< HEAD
     # OBJETIVO
-=======
 # OBJETIVO
->>>>>>> 0583b1baad6d81ee23a8c8c819297753a4ff0829
 // Desenvolvimento de Software: o curso promove uma formação que propicie ao egresso. atuar na especificação, desenvolvimento, manutenção e evolução de softwares. Isso inclui a capacidade de atuar nas diversas etapas do processo de desenvolvimento de softwares/sistemas de informação.
 // Gestão de Qualidade de Software: o curso promove uma formação que propice ao egresso atuar na definição, verificação, validação e evolução de processos, técnicas e metodologias de desenvolvimento de softwares dentro da perspectiva da gestão da quqlidade do processo e do produto de software.
 
@@ -90,13 +87,11 @@ class Aluno {
   
 }
 
-<<<<<<< HEAD
 # Coesão
 // Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
 // Todos os métodos e atributos devem estar voltados para a implementação do mesmo serviço, quando uma única funcionalidade é implementada.
 //As suas vantagens são: Facilitar a impelmentação da uma classe fazendo modificações, a sua alocação de um único responsável por amnter uma classe e o reúso de teste de uma classe.
 
-=======
 # Princípios de projeto de código
 // As boas práticas nos princípios do projeto incluem definir objetivos claros, um escopo bem delimitado e um plano de trabalho detalhado, que abrange o cronograma, os recursos e o orçamento. Além disso, é essencial garantir uma comunicação eficaz, gerir riscos e mudanças, monitorar o progresso, montar uma equipa qualificada e promover a colaboração, focando sempre na entrega de valor ao cliente. 
 
@@ -115,7 +110,6 @@ class Aluno {
 // Todos os métodos e atributos devem estar voltados para a implementação do mesmo serviço, quando uma única funcionalidade é implementada.
 //As suas vantagens são: Facilitar a impelmentação da uma classe fazendo modificações, a sua alocação de um único responsável por manter uma classe e o reúso de teste de uma classe.
 
->>>>>>> 0583b1baad6d81ee23a8c8c819297753a4ff0829
 Exemplo:
 //Numa função de estrutua de dados, é comum definir seu serviço de uma forma mais equilibrada, sendo que nela, é feito de algumas funçoes como:
 - Pilha: Suponha agora a seguinte classe:
@@ -135,11 +129,7 @@ class Stack<T> {
   }
 }
 
-<<<<<<< HEAD
-// OBJETIVO: Reduzir esses acoplamentos, mas não totalmente. Qunado se cria duas classe, uma delas, no lugar dela se tornar um tipo primitivo, números, ela pode se tornar uma referência da outra classe.
-=======
 // OBJETIVO: Reduzir esses acoplamentos, mas não totalmente. Quando se cria duas classe, uma delas, no lugar dela se tornar um tipo primitivo, números, ela pode se tornar uma referência da outra classe.
->>>>>>> 0583b1baad6d81ee23a8c8c819297753a4ff0829
 // CURIOSIDADE: Elas podem ser utilizadas para Springboot, Service e APIs.
 
 # SOLID
@@ -150,11 +140,8 @@ class Stack<T> {
 // Dependency Inversion Principle (Princípio da inversão da dependência)
 
 //SOLID são os 5 pricípios de um projeto que fazem mais do que realizar programas orientadas a objetos, reduzindo ou postergar essa contínua degradação da qualidade interna de sistemas de software. Em resumo, o objetivo não é apenas entregar um projeto capaz de resolver um problema, mas também que facilite manutenções futuras.
-<<<<<<< HEAD
 //Considerações: cada parte de camada tem uma função, camada de apresentação, camada de negócio, cuida de regra de negócio.
-=======
 //Considerações: cada parte de camada tem uma função, camada de apresentação, camada de negócio, cuida de regra de negócio. A principal regra sobre requisitos de software é que eles mudam com frequência. O mesmo acontece com tecnologias de implementação, como bibliotecas e frameworks.
->>>>>>> 0583b1baad6d81ee23a8c8c819297753a4ff0829
 
 # Princípio da Responsabilidade Única
 // Seu foco é na parte do serviço utilizando a regra de negócio, fazendo algo perfeito. Ou seja, é um princípio de design de software que afirma que uma classe ou módulo deve ter apenas uma razão para mudar. Em outras palavras, cada classe deve ter apenas uma responsabilidade, uma única tarefa ou função que ela deve desempenhar.
@@ -354,7 +341,27 @@ f(new B3());  // e B3
 - Projetar a Estrutura do Sistema: Definir a arquitetura e a estrutura de alto nível de um sistema de software, escolhendo os componentes tecnológicos e o seu modo de interação. 
 - Assegurar Qualidade e Desempenho: Focar em atributos de qualidade como escalabilidade, disponibilidade, confiabilidade, manutenibilidade, portabilidade e segurança do sistema.
 
-#
+ 2° Bimestre - Definição das Características da Arquitetura
+# Na figura 4.1, ilustra que uma solução de software não consiste apenas nos requisitos do domínio (o que o sistema deve fazer), mas também em características cruciais da arquitetura. Estas características representam fatores que o arquiteto deve considerar para garantir o sucesso do sistema, contudo, um bom planejamento de softare exige que planejamento de software tenha planos mais em mente do que requisitos funcionais e se integre as características da arquitetura (como Segurança e Desempenho) como elementos essenciais do design. sendo elas: Auditoria: Capacidade de rastrear eventos e ações.
+- Desempenho: A velocidade e a eficiência com que o sistema opera.
+- Segurança: Proteção dos dados e do sistema contra acesso não autorizado.
+- Requisitos: As funcionalidades de negócio (o que o sistema deve fazer).
+- Dados: A gestão e a estrutura da informação.
+- Legalidade: Conformidade com regulamentos e leis.
+- Escalabilidade: A capacidade do sistema de lidar com um aumento na carga de trabalho.
+
+// Os Três Critérios
+Cada lado e vértice do triângulo representa um critério essencial:
+Especifica uma consideração do design fora do domínio (Explícita):
+Isto significa que a característica não é uma simples funcionalidade de negócio (requisito do domínio). Em vez disso, é uma preocupação que vai além do "o quê" o sistema faz (funcionalidade) e foca no "como" ele deve ser construído (design).
+Exemplo: O requisito do domínio é "o cliente pode fazer um pedido." A característica da arquitetura é que esse processo deve ter Alta Disponibilidade.
+Influencia um aspecto estrutural do design (Implícita):
+Esta é a parte técnica. A característica deve ter um impacto direto e significativo na forma como o software é estruturado, organizado em módulos, e nas tecnologias e padrões escolhidos.
+Essa influência é frequentemente implícita, pois molda as decisões de design de fundo, mesmo que o usuário final não perceba diretamente.
+Exemplo: Para garantir o Desempenho, o arquiteto pode ter que usar um cache distribuído ou mudar a estrutura do banco de dados, o que é uma decisão estrutural.
+Crítica ou importante para o sucesso da aplicação:
+Este é o fundamento do triângulo. A característica deve ser vital para que o projeto seja considerado um sucesso pela equipe, pelo negócio ou pelos usuários. Sem ela, o sistema falharia em atender aos padrões de qualidade esperados.
+Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mesmo que todas as funcionalidades estejam corretas.
   
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
