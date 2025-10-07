@@ -341,8 +341,9 @@ f(new B3());  // e B3
 - Projetar a Estrutura do Sistema: Definir a arquitetura e a estrutura de alto nível de um sistema de software, escolhendo os componentes tecnológicos e o seu modo de interação. 
 - Assegurar Qualidade e Desempenho: Focar em atributos de qualidade como escalabilidade, disponibilidade, confiabilidade, manutenibilidade, portabilidade e segurança do sistema.
 
- 2° Bimestre - Definição das Características da Arquitetura
-# Na figura 4.1, ilustra que uma solução de software não consiste apenas nos requisitos do domínio (o que o sistema deve fazer), mas também em características cruciais da arquitetura. Estas características representam fatores que o arquiteto deve considerar para garantir o sucesso do sistema, contudo, um bom planejamento de softare exige que planejamento de software tenha planos mais em mente do que requisitos funcionais e se integre as características da arquitetura (como Segurança e Desempenho) como elementos essenciais do design. sendo elas: Auditoria: Capacidade de rastrear eventos e ações.
+ 2° Bimestre  
+# Definição das Características da Arquitetura
+// Na figura 4.1, ilustra que uma solução de software não consiste apenas nos requisitos do domínio (o que o sistema deve fazer), mas também em características cruciais da arquitetura. Estas características representam fatores que o arquiteto deve considerar para garantir o sucesso do sistema, contudo, um bom planejamento de softare exige que planejamento de software tenha planos mais em mente do que requisitos funcionais e se integre as características da arquitetura (como Segurança e Desempenho) como elementos essenciais do design. sendo elas: Auditoria: Capacidade de rastrear eventos e ações.
 - Desempenho: A velocidade e a eficiência com que o sistema opera.
 - Segurança: Proteção dos dados e do sistema contra acesso não autorizado.
 - Requisitos: As funcionalidades de negócio (o que o sistema deve fazer).
@@ -362,6 +363,11 @@ Exemplo: Para garantir o Desempenho, o arquiteto pode ter que usar um cache dist
 Crítica ou importante para o sucesso da aplicação:
 Este é o fundamento do triângulo. A característica deve ser vital para que o projeto seja considerado um sucesso pela equipe, pelo negócio ou pelos usuários. Sem ela, o sistema falharia em atender aos padrões de qualidade esperados.
 Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mesmo que todas as funcionalidades estejam corretas.
+
+# Trade-offs e Arquitetura Menos Pior
+// As aplicações suportam apenas algumas características da arquitetura que listamos por vários motivos. Primeiro, cada característica com suporte requer um esforço de design e, talvez, um suporte estrutural. Segundo, o maior problema está no fato de que cada característica costuma ter um impacto nas outras. Por exemplo, se um arquiteto deseja melhorar a segurança, é quase certo que terá um impacto negativo no desempenho: a aplicação deve aplicar mais criptografia em tempo real, indireção para ocultar segredos e outras atividades que diminuem potencialmente o desempenho.
+
+Uma metáfora ajudará a mostrar a interconectividade. Aparentemente, os pilotos sempre tentam aprender a pilotar helicópteros porque ele requer um controle para cada mão e pé, e mudar um deles impacta os outros. Assim, pilotar um helicóptero é um exercício de equilíbrio, que descreve bem o processo de trade-off ao escolher as características da arquitetura. Para cada característica em que o arquiteto projeta um suporte, possivelmente teremos uma complicação do design em geral.
   
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
@@ -371,3 +377,4 @@ Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mes
 - [Livro Padrões de Projeto](https://integrada.minhabiblioteca.com.br/reader/books/9788577800469/pageid/0)
 - [Site DESIGN PATTERNS](https://refactoring.guru/pt-br/design-patterns)
 - [Introdução a DevOps](https://learn.microsoft.com/pt-br/training/modules/introduction-to-devops/2-what-is-devops?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.az-400-work-git-for-enterprise-devops )
+- [Livro Fundamentos da Arquitetura de Software] (https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/26[%3Bvnd.vst.idref%3Dcap4.xhtml]!/4/2/136/5:25[ica%2Cr%20m])
