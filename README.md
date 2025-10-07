@@ -377,4 +377,4 @@ Uma metáfora ajudará a mostrar a interconectividade. Aparentemente, os pilotos
 - [Livro Padrões de Projeto](https://integrada.minhabiblioteca.com.br/reader/books/9788577800469/pageid/0)
 - [Site DESIGN PATTERNS](https://refactoring.guru/pt-br/design-patterns)
 - [Introdução a DevOps](https://learn.microsoft.com/pt-br/training/modules/introduction-to-devops/2-what-is-devops?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.az-400-work-git-for-enterprise-devops )
-- [Livro Fundamentos da Arquitetura de Software] (https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/26[%3Bvnd.vst.idref%3Dcap4.xhtml]!/4/2/136/5:25[ica%2Cr%20m])
+- [Livro Fundamentos da Arquitetura de Software](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/26[%3Bvnd.vst.idref%3Dcap4.xhtml]!/4/2/136/5:25[ica%2Cr%20m]).
