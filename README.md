@@ -2,7 +2,7 @@
     # OBJETIVO
 # OBJETIVO
 // Desenvolvimento de Software: o curso promove uma formação que propicie ao egresso. atuar na especificação, desenvolvimento, manutenção e evolução de softwares. Isso inclui a capacidade de atuar nas diversas etapas do processo de desenvolvimento de softwares/sistemas de informação.
-// Gestão de Qualidade de Software: o curso promove uma formação que propice ao egresso atuar na definição, verificação, validação e evolução de processos, técnicas e metodologias de desenvolvimento de softwares dentro da perspectiva da gestão da quqlidade do processo e do produto de software.
+// Gestão de Qualidade de Software: o curso promove uma formação que propice ao egresso atuar na definição, verificação, validação e evolução de processos, técnicas e metodologias de desenvolvimento de softwares dentro da perspectiva da gestão da qualidade do processo e do produto de software.
 
 # Abstração
 // É uma representação simplificada de uma entidade, sendo aplicada em computação, ou seja, um processo de simplificar algo complexo, focando nos detalhes essenciais e ignorando os detalhes irrelevantes para um determinado propósito. É uma representação que esconde a complexidade interna de um sistema, permitindo que utilizadores ou outros sistemas interajam com ele através de uma interface mais simples e fácil de entender.
