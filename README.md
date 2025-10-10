@@ -367,8 +367,16 @@ Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mes
 # Trade-offs e Arquitetura Menos Pior
 // As aplicações suportam apenas algumas características da arquitetura que listamos por vários motivos. Primeiro, cada característica com suporte requer um esforço de design e, talvez, um suporte estrutural. Segundo, o maior problema está no fato de que cada característica costuma ter um impacto nas outras. Por exemplo, se um arquiteto deseja melhorar a segurança, é quase certo que terá um impacto negativo no desempenho: a aplicação deve aplicar mais criptografia em tempo real, indireção para ocultar segredos e outras atividades que diminuem potencialmente o desempenho.
 
-Uma metáfora ajudará a mostrar a interconectividade. Aparentemente, os pilotos sempre tentam aprender a pilotar helicópteros porque ele requer um controle para cada mão e pé, e mudar um deles impacta os outros. Assim, pilotar um helicóptero é um exercício de equilíbrio, que descreve bem o processo de trade-off ao escolher as características da arquitetura. Para cada característica em que o arquiteto projeta um suporte, possivelmente teremos uma complicação do design em geral.
-  
+- Uma metáfora ajudará a mostrar a interconectividade. Aparentemente, os pilotos sempre tentam aprender a pilotar helicópteros porque ele requer um controle para cada mão e pé, e mudar um deles impacta os outros. Assim, pilotar um helicóptero é um exercício de equilíbrio, que descreve bem o processo de trade-off ao escolher as características da arquitetura. Para cada característica em que o arquiteto projeta um suporte, possivelmente teremos uma complicação do design em geral.
+
+# Circuit Breaker
+// O padrão Circuit Breaker (Disjuntor) é uma técnica de design para aumentar a estabilidade e a resiliência de um aplicativo distribuído, especialmente ao lidar com falhas em serviços e recursos remotos.
+// Como Funciona e Por Que Usar:
+- Bloqueio de Acesso: O disjuntor detecta falhas e, em seguida, bloqueia temporariamente novas tentativas de acesso ao serviço defeituoso.
+- Prevenção de Tentativas Falhas: Essa ação impede que o aplicativo tente repetidamente (e sem sucesso) se conectar a um serviço com problemas.
+- Recuperação Eficaz: Ao bloquear o acesso, ele permite que o sistema e o serviço remoto tenham tempo para se recuperar com mais eficácia.
+
+
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
 - [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
