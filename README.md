@@ -376,6 +376,9 @@ Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mes
 - Prevenção de Tentativas Falhas: Essa ação impede que o aplicativo tente repetidamente (e sem sucesso) se conectar a um serviço com problemas.
 - Recuperação Eficaz: Ao bloquear o acesso, ele permite que o sistema e o serviço remoto tenham tempo para se recuperar com mais eficácia.
 
+# CQRS Pattern
+// A Segregação de Responsabilidade de Consulta de Comando (CQRS) é um padrão de design que segrega as operações de leitura e gravação de um repositório de dados em modelos de dados separados. Essa abordagem permite que cada modelo seja otimizado de forma independente e pode melhorar o desempenho, a escalabilidade e a segurança de uma aplicação.
+// 
 
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
