@@ -377,8 +377,20 @@ Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mes
 - Recuperação Eficaz: Ao bloquear o acesso, ele permite que o sistema e o serviço remoto tenham tempo para se recuperar com mais eficácia.
 
 # CQRS Pattern
-// A Segregação de Responsabilidade de Consulta de Comando (CQRS) é um padrão de design que segrega as operações de leitura e gravação de um repositório de dados em modelos de dados separados. Essa abordagem permite que cada modelo seja otimizado de forma independente e pode melhorar o desempenho, a escalabilidade e a segurança de uma aplicação.
-// 
+// A Segregação de Responsabilidade de Consulta de Comando CQRS (Command Query Responsibility Segregation) é um padrão de design que segrega as operações de leitura e gravação de um repositório de dados em modelos de dados separados. Essa abordagem permite que cada modelo seja otimizado de forma independente e pode melhorar o desempenho, a escalabilidade e a segurança de uma aplicação.
+// Os fundamentos do padrão CQRS são a separação das responsabilidades de gravação (comandos) e leitura (consultas), o que permite otimizar cada uma delas independentemente. Isso significa que o sistema terá modelos, dados e lógica de negócios distintos para processar comandos (que modificam o estado) e para executar consultas (que apenas retornam dados). Essa separação melhora o desempenho, a escalabilidade e a complexidade de sistemas com alta disputa de dados. 
+// Comandos (Gravação)
+- Responsabilidade: Manipulam a lógica de negócios e mudam o estado do sistema. 
+- Natureza: São transações que representam uma intenção, como "Reservar quarto de hotel". 
+- Processamento: Geralmente são assíncronos, ou seja, a alteração pode ocorrer posteriormente. 
+- Dados: Podem ser armazenados em um modelo de dados normalizado para transações de gravação. 
+- Estratégia: Podem ser implementados usando Event Sourcing, onde o estado é armazenado como uma sequência de eventos. 
+// Consultas (Leitura)
+- Responsabilidade: Recuperam dados de forma eficiente e não modificam o estado do sistema. 
+- Natureza: Retornam objetos de transferência de dados (DTOs) em um formato específico para a aplicação ou interface de usuário. 
+- Processamento: São geralmente síncronas e otimizadas para a leitura, podendo ter um desempenho muito alto. 
+- Dados: Podem ser armazenados em um modelo de dados otimizado para leitura, possivelmente desnormalizado, para minimizar a necessidade de joins. 
+- Estratégia: O modelo de consulta pode ser construído a partir de eventos, utilizando uma abordagem de "consistência eventual".
 
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
