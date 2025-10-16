@@ -394,6 +394,10 @@ Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mes
 - Dados: Podem ser armazenados em um modelo de dados otimizado para leitura, possivelmente desnormalizado, para minimizar a necessidade de joins. 
 - Estratégia: O modelo de consulta pode ser construído a partir de eventos, utilizando uma abordagem de "consistência eventual".
 
+# Retry Pattern (Padrão de Repetição)
+// Os padrões de arquitetura de retry pattern incluem o Retry Fixo (com intervalo constante), Retry Exponencial (com tempo de espera que aumenta a cada tentativa) e o Exponential Backoff com Jitter (que adiciona aleatoriedade ao tempo de espera para evitar sincronização em massa). Essas estratégias ajudam a lidar com falhas transitórias em sistemas distribuídos, como em microsserviços. 
+// Retry Fixo (Fixed Interval): O sistema tenta novamente a operação com um intervalo de tempo fixo entre as tentativas.  Retry Exponencial (Exponential Backoff): O tempo de espera entre as tentativas aumenta exponencialmente. Por exemplo, a primeira tentativa pode ser após \(1\) segundo, a segunda após \(2\) segundos, a terceira após \(4\) segundos, e assim por diante. Isso ajuda a evitar a sobrecarga contínua do serviço de destino. 
+
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
 - [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
