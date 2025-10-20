@@ -402,6 +402,9 @@ Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mes
 // Os padrões de arquitetura de retry pattern incluem o Retry Fixo (com intervalo constante), Retry Exponencial (com tempo de espera que aumenta a cada tentativa) e o Exponential Backoff com Jitter (que adiciona aleatoriedade ao tempo de espera para evitar sincronização em massa). Essas estratégias ajudam a lidar com falhas transitórias em sistemas distribuídos, como em microsserviços. 
 // Retry Fixo (Fixed Interval): O sistema tenta novamente a operação com um intervalo de tempo fixo entre as tentativas.  Retry Exponencial (Exponential Backoff): O tempo de espera entre as tentativas aumenta exponencialmente. Por exemplo, a primeira tentativa pode ser após \(1\) segundo, a segunda após \(2\) segundos, a terceira após \(4\) segundos, e assim por diante. Isso ajuda a evitar a sobrecarga contínua do serviço de destino. 
 
+# Estilo de Arquitetura em Camadas
+// A arquitetura em camadas, também conhecida como o estilo de arquitetura n-tier (multicamadas), é um dos estilos mais comuns. Ele é o padrão de fato da maioria das aplicações, basicamente por sua simplicidade, familiaridade e baixo custo. Também é um modo muito natural de desenvolver aplicações devido à lei de Conway, que determina que as organizações que projetam sistemas estão limitadas a produzir designs que são cópias das estruturas de comunicação dessas organizações.
+
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
 - [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
