@@ -6,10 +6,14 @@
 
 # Abstração
 // É uma representação simplificada de uma entidade, sendo aplicada em computação, ou seja, um processo de simplificar algo complexo, focando nos detalhes essenciais e ignorando os detalhes irrelevantes para um determinado propósito. É uma representação que esconde a complexidade interna de um sistema, permitindo que utilizadores ou outros sistemas interajam com ele através de uma interface mais simples e fácil de entender.
-// Sua importânicia é:
+// Sua importância é:
 - Reduz a complexidade: Torna o desenvolvimento e a manutenção de sistemas complexos mais gerenciáveis, ao dividir o sistema em partes menores e mais fáceis de entender. 
-- Foco no essencial: Permite que os programadores se concentrem nos aspetos mais importantes de um sistema, sem se perderem nos detalhes técnicos. 
+- Foco no essencial: Permite que os programadores se concentrem nos aspetos mais importantes de um sistema, sem se perderem nos detalhes técnicos.
+
 // APIs (Interfaces de Programação de Aplicações) e Tipos de Dados Abstratos são exemplos essenciais para o uso de abstrações para se aplicar nas entidades. repositórios, controladores e serviços.
+
+- Resumindo: O Retry está dentro do circuit breaker, no design pattern, isso acontece quando uma operação falha, é necessário tentar novamente, quando ele abre, começa a tentar de novo. Mas o padrão retry pode ser usado sozinho sem o circuit breaker, porém ele tem a opão que possa ser interrompido de uma forma manual, como:
+- While / True  (Loop eterno).
 
 // 1° Entity     - Dados
 // 2° repository (CRUD) JPA spring data
