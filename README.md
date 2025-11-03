@@ -415,6 +415,18 @@ Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mes
 
 - Adicionando Camadas: Embora as camadas fechadas facilitem as camadas de isolamento e, portanto, ajudem a isolar a alteração dentro da arquitetura, há vezes em que faz sentido que certas camadas sejam abertas. Por exemplo, suponha que existam objetos compartilhados na camada de negócio contendo uma funcionalidade comum para os componentes comerciais (como classes utilitárias de data e string, classes de auditoria, classes de log etc.). Suponha que haja uma decisão de arquitetura estabelecendo que a camada de apresentação esteja impedida de usar esses objetos de negócio compartilhados. Esse cenário é difícil de administrar e controlar porque, arquiteturalmente, a camada de apresentação tem acesso à camada de negócio, tendo assim acesso aos objetos compartilhados dentro dessa camada.
 
+# Estilo de Arquitetura Pipeline
+// A arquitetura pipeline é uma técnica que divide o processamento de uma instrução ou fluxo de dados em múltiplas etapas, permitindo que várias instruções/etapas sejam executadas simultaneamente em estágios diferentes, aumentando o desempenho e a eficiência. Em processadores, isso significa que diferentes instruções podem estar em fases como busca, decodificação e execução ao mesmo tempo. Em pipelines de dados, a técnica é usada para orquestrar o fluxo de dados entre origem e destino, processando-os em lotes ou tempo real.
+// Os filtros são autônomos e independentes dos outros filtros, em geral sem estado. Os filtros devem realizar apenas uma tarefa. As tarefas compostas devem ser lidadas por uma sequência de filtros, não por um.
+Existem quatro tipos de filtros nesse estilo de arquitetura:
+- Produtor: O ponto de partida de um processo, de saída apenas, às vezes chamado de origem.
+- Transformador: Aceita a entrada, realiza opcionalmente uma transformação em algum ou todos os dados, então encaminha para o canal de saída. Os defensores funcionais reconhecerão esse recurso como mapa.
+- Verificador: Aceita a entrada, testa um ou mais critérios, então produz opcionalmente uma saída, com base no teste. Os programadores funcionais reconhecerão isso como semelhante à redução.
+- Consumidor: O ponto de término para o fluxo do pipeline. Por vezes os consumidores persistem o resultado final do processo de pipeline para um banco de dados ou podem exibir os resultados finais em uma tela IU.
+
+# Estilo de Arquitetura em MicroKernel
+// O estilo de arquitetura microkernel (também referido como arquitetura de plug-in) foi inventado há décadas e ainda é muito usado hoje. Esse estilo é um ajuste natural para os aplicativos baseados em produto (empacotados e disponibilizados para download e instalação como uma única implementação monolítica, em geral instalada no site do cliente como um produto de terceiros), mas também é largamente usado em muitos aplicativos comerciais personalizados não de produtos.
+
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
 - [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
@@ -425,3 +437,5 @@ Exemplo: Se o sistema não tiver Segurança adequada, ele será um fracasso, mes
 - [Introdução a DevOps](https://learn.microsoft.com/pt-br/training/modules/introduction-to-devops/2-what-is-devops?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.az-400-work-git-for-enterprise-devops )
 - [Livro Fundamentos da Arquitetura de Software](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/26[%3Bvnd.vst.idref%3Dcap4.xhtml]!/4/2/136/5:25[ica%2Cr%20m]).
 - [Estilo de Arquitetura em Camadas](https://app.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/40[%3Bvnd.vst.idref%3Dcap10.xhtml]!/4/2/2/1:0[%2CCAP])
+- [Estilo de Arquitetura em Pipeline](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/42[%3Bvnd.vst.idref%3Dcap11.xhtml]!/4/2/20/3:84[mal%2Cmen])
+- [Estilo de Arquitetura em Microkernel](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/44[%3Bvnd.vst.idref%3Dcap12.xhtml]!/4/2/2/1:0[%2CCAP])
