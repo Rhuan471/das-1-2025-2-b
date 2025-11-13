@@ -427,6 +427,9 @@ Existem quatro tipos de filtros nesse estilo de arquitetura:
 # Estilo de Arquitetura em MicroKernel
 // O estilo de arquitetura microkernel (também referido como arquitetura de plug-in) foi inventado há décadas e ainda é muito usado hoje. Esse estilo é um ajuste natural para os aplicativos baseados em produto (empacotados e disponibilizados para download e instalação como uma única implementação monolítica, em geral instalada no site do cliente como um produto de terceiros), mas também é largamente usado em muitos aplicativos comerciais personalizados não de produtos.
 
+# Estilo de Arquitetura de microsserviço
+// 
+
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
 - [Livro Eng Soft Moderna CAP 7](https://engsoftmoderna.info/cap7.html)
