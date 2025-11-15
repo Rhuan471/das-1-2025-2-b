@@ -428,7 +428,12 @@ Existem quatro tipos de filtros nesse estilo de arquitetura:
 // O estilo de arquitetura microkernel (também referido como arquitetura de plug-in) foi inventado há décadas e ainda é muito usado hoje. Esse estilo é um ajuste natural para os aplicativos baseados em produto (empacotados e disponibilizados para download e instalação como uma única implementação monolítica, em geral instalada no site do cliente como um produto de terceiros), mas também é largamente usado em muitos aplicativos comerciais personalizados não de produtos.
 
 # Estilo de Arquitetura de microsserviço
-// 
+// Esse estilo de arquitetura de microsserviço foi muito útil e importante nos velhos tempos, comparando uma diferença entre topologia e filosofia.
+- A topologia de microsserviço refere-se à forma como os microsserviços individuais e independentes são organizados, conectados e interagem dentro de uma arquitetura de software maior. Diferentemente da topologia de rede física (barramento, estrela, anel), no contexto de microsserviços, o termo está mais relacionado aos padrões de comunicação e organização lógica dos componentes do sistema.
+- As topologias em microsserviços não são estruturas físicas rígidas, mas sim padrões de design que determinam o fluxo de dados e controle. As abordagens comuns incluem:
+  - API Gateway: Um padrão predominante onde todas as solicitações de clientes externos passam por um único ponto de entrada, o API Gateway, que direciona o tráfego para os microsserviços apropriados. Isso simplifica a gestão de acesso e a comunicação externa.
+  - Comunicação Direta Ponto a Ponto: Os microsserviços se comunicam diretamente uns com os outros, geralmente via HTTP/REST ou gRPC. Isso oferece alta flexibilidade, mas pode se tornar complexo de gerenciar e monitorar à medida que o número de serviços aumenta.
+
 
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
