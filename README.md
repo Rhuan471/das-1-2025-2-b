@@ -434,6 +434,13 @@ Existem quatro tipos de filtros nesse estilo de arquitetura:
   - API Gateway: Um padrão predominante onde todas as solicitações de clientes externos passam por um único ponto de entrada, o API Gateway, que direciona o tráfego para os microsserviços apropriados. Isso simplifica a gestão de acesso e a comunicação externa.
   - Comunicação Direta Ponto a Ponto: Os microsserviços se comunicam diretamente uns com os outros, geralmente via HTTP/REST ou gRPC. Isso oferece alta flexibilidade, mas pode se tornar complexo de gerenciar e monitorar à medida que o número de serviços aumenta.
 
+# 
+ dapr init
+ docker ps
+ sudu su
+ apt-get update
+ apt-get install maven -y
+ exit
 
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
