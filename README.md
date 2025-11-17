@@ -427,14 +427,22 @@ Existem quatro tipos de filtros nesse estilo de arquitetura:
 # Estilo de Arquitetura em MicroKernel
 // O estilo de arquitetura microkernel (também referido como arquitetura de plug-in) foi inventado há décadas e ainda é muito usado hoje. Esse estilo é um ajuste natural para os aplicativos baseados em produto (empacotados e disponibilizados para download e instalação como uma única implementação monolítica, em geral instalada no site do cliente como um produto de terceiros), mas também é largamente usado em muitos aplicativos comerciais personalizados não de produtos.
 
-# Estilo de Arquitetura de microsserviço
+# Estilo de Arquitetura de microsserviços
 // Esse estilo de arquitetura de microsserviço foi muito útil e importante nos velhos tempos, comparando uma diferença entre topologia e filosofia.
 - A topologia de microsserviço refere-se à forma como os microsserviços individuais e independentes são organizados, conectados e interagem dentro de uma arquitetura de software maior. Diferentemente da topologia de rede física (barramento, estrela, anel), no contexto de microsserviços, o termo está mais relacionado aos padrões de comunicação e organização lógica dos componentes do sistema.
 - As topologias em microsserviços não são estruturas físicas rígidas, mas sim padrões de design que determinam o fluxo de dados e controle. As abordagens comuns incluem:
   - API Gateway: Um padrão predominante onde todas as solicitações de clientes externos passam por um único ponto de entrada, o API Gateway, que direciona o tráfego para os microsserviços apropriados. Isso simplifica a gestão de acesso e a comunicação externa.
   - Comunicação Direta Ponto a Ponto: Os microsserviços se comunicam diretamente uns com os outros, geralmente via HTTP/REST ou gRPC. Isso oferece alta flexibilidade, mas pode se tornar complexo de gerenciar e monitorar à medida que o número de serviços aumenta.
 
-# 
+// A camada API  (Interface de Programação de Aplicações) é uma camada opcional, mas comum, posicionada entre os consumidores do sistema (como interfaces de usuário ou outros sistemas) e os microsserviços em si.
+- Serve como um ponto de indireção, atuando como um proxy ou gateway.
+- É um local adequado para realizar tarefas úteis de nível operacional, como serviço de nomenclatura (descoberta de serviços).
+- Oferece um ponto de entrada único para funcionalidades que podem estar distribuídas em vários serviços.
+   - O uso de mediadores é comum em arquiteturas com particionamento técnico (onde a separação é baseada em camadas técnicas, como lógica de negócios, dados, etc.). No entanto, a arquitetura de microsserviços é fortemente baseada em particionamento por domínio, o que significa que a Camada API deve ser mantida como um facilitador técnico e operacional, e não como um centro de lógica de domínio ou orquestração.
+
+# Dokcer e suas funcionalidades
+- Ele funciona empacotando aplicações em contêineres, que são unidades isoladas contendo código e todas as suas dependências, garantindo que a aplicação funcione de forma consistente em qualquer ambiente. Em vez de virtualizar todo um sistema operacional como as máquinas virtuais (VMs), o Docker utiliza os recursos do kernel do sistema operacional host (como o Linux) para criar contêineres leves e eficientes. A tecnologia se baseia em imagens, que são "modelos" que contêm as configurações e o sistema de arquivos, e os contêineres, alguns comandos abaixo são executados durante a programação:
+  
  dapr init
  docker ps
  sudu su
