@@ -234,7 +234,7 @@ class Main {
 - de objetos passados com parâmetros (caso 2)
 - de objetos criados pelo próprio método (caso 3)
 - de atributos da classe do método (caso 4)
-
+```java
 public class Janelinha2 extends JFrame{
     private JTable tabelinha;
     
@@ -254,7 +254,7 @@ public class Janelinha2 extends JFrame{
     }
 
 }
-
+```
 # Princípio de Substituição de Liskov
 // O Princípio de Substituição de Liskov (LSP) é um conceito da programação orientada a objetos que estabelece que, se uma classe B é uma subtipo de uma classe A, então os objetos de B devem poder ser substituídos por objetos de A sem que isso afete a execução correta do programa, mantendo o comportamento esperado. Isso significa que a subclasse não deve "quebrar" ou alterar o comportamento da superclasse, e deve ser totalmente compatível com ela. 
 Para explicar o Princípio de Substituição de Liskov vamos nos basear no seguinte exemplo:
