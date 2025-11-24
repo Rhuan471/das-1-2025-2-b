@@ -76,7 +76,7 @@ Em resumo, um Arquiteto de Framework desempenha um papel crucial no desenvolvime
 Métodos get e set — muitas vezes chamados apenas de getters e setters — são muito usados em linguagens orientadas a objetos, como Java e C++. A recomendação para uso desses métodos é a seguinte: todos os dados de uma classe devem ser privados e o acesso a eles — se necessário — deve ocorrer por meio de getters (acesso de leitura) e setters (acesso de escrita).
 
 Veja um exemplo a seguir, no qual métodos get e set são usados para acessar o atributo matricula de uma classe Aluno.
-
+```java
 class Aluno {
 
   private int matricula;
@@ -90,6 +90,7 @@ class Aluno {
    }
   
 }
+```
 
 # Coesão
 // Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
