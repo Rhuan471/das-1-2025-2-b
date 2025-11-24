@@ -446,13 +446,14 @@ Existem quatro tipos de filtros nesse estilo de arquitetura:
 # Docker e suas funcionalidades
 - Ele funciona empacotando aplicações em contêineres, que são unidades isoladas contendo código e todas as suas dependências, garantindo que a aplicação funcione de forma consistente em qualquer ambiente. Em vez de virtualizar todo um sistema operacional como as máquinas virtuais (VMs), o Docker utiliza os recursos do kernel do sistema operacional host (como o Linux) para criar contêineres leves e eficientes. A tecnologia se baseia em imagens, que são "modelos" que contêm as configurações e o sistema de arquivos, e os contêineres, alguns comandos abaixo são executados durante a programação:
   
- // dapr init
- // docker ps
- // sudu su
- // apt-get update
- // apt-get install maven -y
- // exit
- 
+```bash
+dapr init
+docker ps
+sudu su
+apt-get update
+apt-get install maven -y
+exit
+```
 
 
 # Referências
