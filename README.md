@@ -427,6 +427,9 @@ Existem quatro tipos de filtros nesse estilo de arquitetura:
 # Estilo de Arquitetura em MicroKernel
 // O estilo de arquitetura microkernel (também referido como arquitetura de plug-in) foi inventado há décadas e ainda é muito usado hoje. Esse estilo é um ajuste natural para os aplicativos baseados em produto (empacotados e disponibilizados para download e instalação como uma única implementação monolítica, em geral instalada no site do cliente como um produto de terceiros), mas também é largamente usado em muitos aplicativos comerciais personalizados não de produtos.
 
+- Sistema Central
+  - O sistema central é formalmente definido como a funcionalidade mínima requerida para rodar o sistema. O IDE Eclipse é um bom exemplo. O sistema central do Eclipse é apenas um editor de texto básico: abrir um arquivo, mudar o texto e salvar o arquivo. É só depois de acrescentar plug-ins que o Eclipse começa a se tornar um produto útil. Contudo, outra definição de sistema central é o caminho feliz (o fluxo de processamento geral) pela aplicação, com pouco ou nenhum processamento personalizado. Remover a complexidade ciclomática do sistema central e colocá-la em componentes de plug-in separados permite uma melhor extensão e manutenção, além de uma testabilidade maior.
+
 # Estilo de Arquitetura de microsserviços
 // Esse estilo de arquitetura de microsserviço foi muito útil e importante nos velhos tempos, comparando uma diferença entre topologia e filosofia.
 - A topologia de microsserviço refere-se à forma como os microsserviços individuais e independentes são organizados, conectados e interagem dentro de uma arquitetura de software maior. Diferentemente da topologia de rede física (barramento, estrela, anel), no contexto de microsserviços, o termo está mais relacionado aos padrões de comunicação e organização lógica dos componentes do sistema.
@@ -440,7 +443,7 @@ Existem quatro tipos de filtros nesse estilo de arquitetura:
   - É um local adequado para realizar tarefas úteis de nível operacional, como serviço de nomenclatura (descoberta de serviços).
   - Oferece um ponto de entrada único para funcionalidades que podem estar distribuídas em vários serviços.
 
-# Dokcer e suas funcionalidades
+# Docker e suas funcionalidades
 - Ele funciona empacotando aplicações em contêineres, que são unidades isoladas contendo código e todas as suas dependências, garantindo que a aplicação funcione de forma consistente em qualquer ambiente. Em vez de virtualizar todo um sistema operacional como as máquinas virtuais (VMs), o Docker utiliza os recursos do kernel do sistema operacional host (como o Linux) para criar contêineres leves e eficientes. A tecnologia se baseia em imagens, que são "modelos" que contêm as configurações e o sistema de arquivos, e os contêineres, alguns comandos abaixo são executados durante a programação:
   
  // dapr init
@@ -449,6 +452,8 @@ Existem quatro tipos de filtros nesse estilo de arquitetura:
  // apt-get update
  // apt-get install maven -y
  // exit
+ 
+
 
 # Referências
 - [Livro Eng Soft Moderna CAP 5](https://engsoftmoderna.info/cap5.html)
@@ -462,3 +467,4 @@ Existem quatro tipos de filtros nesse estilo de arquitetura:
 - [Estilo de Arquitetura em Camadas](https://app.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/40[%3Bvnd.vst.idref%3Dcap10.xhtml]!/4/2/2/1:0[%2CCAP])
 - [Estilo de Arquitetura em Pipeline](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/42[%3Bvnd.vst.idref%3Dcap11.xhtml]!/4/2/20/3:84[mal%2Cmen])
 - [Estilo de Arquitetura em Microkernel](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/44[%3Bvnd.vst.idref%3Dcap12.xhtml]!/4/2/2/1:0[%2CCAP])
+- [Estilo de Arquitetura Microsserviço](https://integrada.minhabiblioteca.com.br/reader/books/9788550819754/epubcfi/6/54[%3Bvnd.vst.idref%3Dcap17.xhtml]!/4/2/2/1:0[%2CCAP])
