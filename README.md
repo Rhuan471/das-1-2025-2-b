@@ -455,6 +455,26 @@ apt-get update
 apt-get install maven -y
 exit
 ```
+## Dapr
+
+- Compilar o projeto 
+```bash
+mvn --projects app-a,app-b  package -DskipTests
+```
+
+- Rodar o projeto
+```bash
+dapr run -f dapr.yaml
+```
+
+## Configuração do ambiente
+
+- [Instalar o Docker] (https://docs.docker.com/engine/install/)
+- [Instalar o Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
+- [Opcional: VSCode Dapr Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-dapr)
+- Configuração do ambiente de desenvolvimento
+- Criar um arquivo .gitignore
+- Instalar o Maven no codespace
 
 
 # Referências
