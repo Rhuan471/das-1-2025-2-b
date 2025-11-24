@@ -9,4 +9,4 @@ apps:
   - appID: app-b
     appDirPath: ./app-b/target/
     appPort: 8081
-    command: ["java", "-jar", "app-b-0.0.1-SNAPSHOT.jar"]
+    command: ["java", "-jar", "app-b-0.0.1-SNAPSHOT.jar"] 

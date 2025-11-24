@@ -20,17 +20,16 @@ public class HomeController {
         try(DaprClient client = new DaprClientBuilder().build()){
             var mensagem = "Hello from App A";
             client.invokeMethod("app-b", "/api/v1/startBSync",
-                mensagem,HttpExtension.POST);
+                mensagem,HttpExtension.POST).block();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         return ResponseEntity.ok().build();
     }
-}
 
 
-@PostMapping("/pub")
+    @PostMapping("/pub")
     public ResponseEntity startAASync() {
         System.out.println("App A started");
         try(DaprClient daprClient = new DaprClientBuilder().build()){
@@ -43,3 +42,7 @@ public class HomeController {
         }
         return ResponseEntity.ok().body("App A started");
     }
+
+
+
+}
