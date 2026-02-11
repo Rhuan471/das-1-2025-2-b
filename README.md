@@ -95,7 +95,7 @@ class Aluno {
 # Coesão
 // Trata-se de uma classe coesa, pois todos os seus métodos implementam operações importantes em uma estrutura de dados do tipo Pilha.
 // Todos os métodos e atributos devem estar voltados para a implementação do mesmo serviço, quando uma única funcionalidade é implementada.
-//As suas vantagens são: Facilitar a impelmentação da uma classe fazendo modificações, a sua alocação de um único responsável por amnter uma classe e o reúso de teste de uma classe.
+//As suas vantagens são: Facilitar a impelmentação da uma classe fazendo modificações, a sua alocação de um único responsável por manter uma classe e o reúso de teste de uma classe.
 
 # Princípios de projeto de código
 // As boas práticas nos princípios do projeto incluem definir objetivos claros, um escopo bem delimitado e um plano de trabalho detalhado, que abrange o cronograma, os recursos e o orçamento. Além disso, é essencial garantir uma comunicação eficaz, gerir riscos e mudanças, monitorar o progresso, montar uma equipa qualificada e promover a colaboração, focando sempre na entrega de valor ao cliente. 
